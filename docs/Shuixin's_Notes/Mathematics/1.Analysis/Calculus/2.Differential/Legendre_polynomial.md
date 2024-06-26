@@ -1,0 +1,3 @@
+
+$\mathfrak{R}_{2}([-1,1],\mathbb{R})$ 上的多项式函数系的基 $\{1,x,x^{2},\cdots,x^{n},\cdots\}$ 线性无关但并非规范正交基
+对其作规范正交化: $$p_{1}=1,\qquad p_{2}=\frac{\sqrt{6}}{2}x,\qquad p_{n}=\frac{x^{n}-\sum\limits_{k=1}^{n-1}\int_{-1}^{1}x^{n+k}\,\mathrm{d}x}{||x^{n}-\sum\limits_{k=1}^{n-1}\int_{-1}^{1}x^{n+k}\,\mathrm{d}x||}$$计算 $p_{n}$ , $$\begin{align}p_{n}&=\frac{x^{n}-\sum\limits_{k=1}^{n-1}\frac{1-(-1)^{n+k+1}}{n+k+1}x^{k}}{||x^{n}-\sum\limits_{k=1}^{n-1}\frac{1-(-1)^{n+k+1}}{n+k+1}x^{k}||}\end{align}$$

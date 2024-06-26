@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "e6aa6c14835bae2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "96eb073e987f3182",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e43e9d62c8617b19",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "60df5b058ecbc538",
+    "type": "split",
+    "children": [
+      {
+        "id": "19c26a5227c69753",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81e26ea7cf3b7cb6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c3b3f083b4ba7d32",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "abca096e88ec3998",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3e246a19d86406d4",
+    "type": "split",
+    "children": [
+      {
+        "id": "facf2d47450797b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac44e8735cf4d42b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "73ed6541672b84f3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "688cffbaba245833",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6fb3faf7f0b871a4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "media-extended:Open media": false
+    }
+  },
+  "active": "e43e9d62c8617b19",
+  "lastOpenFiles": [
+    "数学/2.代数/1.线性代数/1.线性映射/Jordan标准型.md",
+    "数学/2.代数/1.线性代数/1.线性映射/有度量的线性空间.md",
+    "数学/2.代数/1.线性代数/1.线性映射/线性函数.md",
+    "数学/1.分析/微积分/4.级数理论/Fourier级数.md",
+    "数学/2.代数/2.抽象代数/1.群/群.md",
+    "数学/PPT/矩阵分解.md",
+    "数学/一些猜测的结论/分析.md",
+    "数学/2.代数/1.线性代数/2.矩阵/酉相似与酉等价.md",
+    "数学/2.代数/1.线性代数/2.矩阵/矩阵分解.md",
+    "数学/1.分析/微积分/4.级数理论/级数逼近.md",
+    "数学/1.分析/微积分/4.级数理论/级数.md",
+    "数学/3.拓扑/点集拓扑/连续映射.md",
+    "数学/工具箱/组合相关/PageRank 问题.md",
+    "数学/2.代数/2.抽象代数/2.环/环.md",
+    "数学/2.代数/1.线性代数/3.多项式/多项式.md",
+    "物理/4.电磁学",
+    "物理/3.热学/气体动理论.md",
+    "物理/3.热学/热力学基础.md",
+    "物理/3.热学",
+    "物理/2.光学/波动光学.md",
+    "物理/2.光学/机械波.md",
+    "物理/2.光学",
+    "物理/1.动力学/质点运动学.md",
+    "物理/1.动力学/牛顿运动定律.md",
+    "物理/1.动力学/机械振动.md",
+    "数学/工具箱/组合相关/PageRank 问题.md.baiduyun.downloading.cfg",
+    "数学/工具箱/组合相关/PageRank 问题.md.baiduyun.downloading",
+    "物理/1.动力学/功和能.md",
+    "物理/1.动力学/刚体运动学.md",
+    "物理/1.动力学/刚体动力学.md",
+    "物理/1.动力学/冲量与动量.md",
+    "物理/1.动力学",
+    "物理",
+    "数学/工具箱/恒等式",
+    "数学/工具箱/组合相关",
+    "数学/一些猜测的结论/分析.md.baiduyun.downloading.cfg"
+  ]
+}

@@ -1,0 +1,79 @@
+site_name: 水芯笔的笔筒~
+theme:
+  name: material
+
+nav:
+  - 主页: index.md
+  - 数学笔记:
+      - 分析:
+          - 微积分:
+              - 实数理论:
+                  - 实数集公理系统: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/1.The_RealNumber_Axiom_system.md
+                  - 完备性-闭区间套: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/2.Completeness_Closed_nested_interval.md
+                  - 完备性-有限覆盖: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/3.Completeness_Finite_covering.md
+                  - 完备性-聚点原理: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/4.Completeness_Accumulative_point_Principle.md
+                  - 完备性-Cauchy原理: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/5.Completeness_Cauchy_Principle.md
+                  - 完备性-Dedekind原理: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/6.Completeness_Dedekind_Principle.md
+                  - 完备性-确界原理: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/7.Completeness_Supremum_Principle.md
+                  - 完备性-单调有界原理: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/8.Completeness_Monotonically_bounded_Principle.md
+                  - 完备性-致密性原理: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/9.Compactness_Principle.md
+              - 极限理论:
+                  - 函数极限: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/1.Limitation/Function_limitation.md
+                  - 序列极限: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/1.Limitation/Sequence_limitation.md
+              - 微分理论:
+                  - Legendre多项式: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/2.Differential/Legendre_polynomial.md
+              - 积分理论:
+                  - Riemann积分: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/3.Integral/Riemann_integral.md
+              - 级数理论:
+                  - 级数: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/4.Series/Series.md
+                  - 幂级数: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/4.Series/Power_series.md
+                  - Fourier级数: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/4.Series/Fourier_series.md
+                  - Fourier级数(H): Shuixin's_Notes/Mathematics/1.Analysis/Calculus/4.Series/Fourier_series(H).md
+                  - 级数逼近: Shuixin's_Notes/Mathematics/1.Analysis/Calculus/4.Series/Approximation.md
+      - 代数:
+          - 线性代数:
+              - 线性映射:
+                  - Jordan标准型: Shuixin's_Notes/Mathematics/2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Jordan_form.md
+                  - 线性函数: Shuixin's_Notes/Mathematics/2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Linear_function.md
+                  - 有度量的线性空间: Shuixin's_Notes/Mathematics/2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Linear_space_with_Measurement.md
+              - 矩阵:
+                  - 二次型与实对称矩阵: Shuixin's_Notes/Mathematics/2.Algebra/1.Linear_Algebra/2.Matrix/Quadratic_form_and_Real_symmetric_matrix.md
+                  - 酉相似与酉等价: Shuixin's_Notes/Mathematics/2.Algebra/1.Linear_Algebra/2.Matrix/Unitary_similarity_and_Unitary_equivalence.md
+                  - 矩阵分解: Shuixin's_Notes/Mathematics/2.Algebra/1.Linear_Algebra/2.Matrix/Matrix_factorization.md
+              - 多项式:
+                  - 单元多项式: Shuixin's_Notes/Mathematics/2.Algebra/1.Linear_Algebra/3.Polynomial/Single_variable_Polynomial.md
+          - 抽象代数:
+              - 群: Shuixin's_Notes/Mathematics/2.Algebra/2.Abstract_Algebra/1.Group/Group.md
+              - 环: Shuixin's_Notes/Mathematics/2.Algebra/2.Abstract_Algebra/2.Ring/Ring.md
+              - 域: Shuixin's_Notes/Mathematics/2.Algebra/2.Abstract_Algebra/3.Field/Field.md
+      - 拓扑:
+         - 点集拓扑:
+               - 连续映射: Shuixin's_Notes/Mathematics/3.Topology/Point_set_Topology/Continuous_mapping.md
+      - 工具箱:
+         - 不等式:
+            - Abel不等式: Shuixin's_Notes/Mathematics/Tools/Inequality/Abel_Inequality.md
+         - 代数相关:
+            - 行列式的应用: Shuixin's_Notes/Mathematics/Tools/Algebra_related/Application_of_Determinant.md
+            - 关联矩阵: Shuixin's_Notes/Mathematics/Tools/Algebra_related/Incidence_matrix.md
+            - 可交换的线性变换: Shuixin's_Notes/Mathematics/Tools/Algebra_related/Commutative_matrix.md
+            - 密码学·m序列: Shuixin's_Notes/Mathematics/Tools/Algebra_related/Cryptography_M-sequence.md
+            - 密码学·线性码: Shuixin's_Notes/Mathematics/Tools/Algebra_related/Cryptography_LinearCode.md
+         - 恒等式:
+            - Abel恒等式: Shuixin's_Notes/Mathematics/Tools/Identical_equation/Abel_identity.md
+            - 三角恒等式: Shuixin's_Notes/Mathematics/Tools/Identical_equation/Trigonometric_identity.md
+            - 积分恒等式: Shuixin's_Notes/Mathematics/Tools/Identical_equation/Integral_identity.md
+         - 组合相关:
+            - 抽屉原理: Shuixin's_Notes/Mathematics/Tools/Combinatorics_related/Drawer_Principle.md
+            - PageRank 问题: Shuixin's_Notes/Mathematics/Tools/Combinatorics_related/PageRank.md
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+extra_javascript:
+  - javascript/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
