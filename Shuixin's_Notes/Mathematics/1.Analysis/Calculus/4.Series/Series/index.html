@@ -1,0 +1,2430 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../3.Integral/Riemann_integral/">
+      
+      
+        <link rel="next" href="../Power_series/">
+      
+      
+      <link rel="icon" href="../../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>级数 - 水芯笔的笔筒~</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../../.." title="水芯笔的笔筒~" class="md-header__button md-logo" aria-label="水芯笔的笔筒~" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            水芯笔的笔筒~
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              级数
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../../.." title="水芯笔的笔筒~" class="md-nav__button md-logo" aria-label="水芯笔的笔筒~" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    水芯笔的笔筒~
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数学笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            数学笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    分析
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            分析
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    微积分
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            微积分
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1_1" id="__nav_2_1_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    实数理论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            实数理论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.Real_number/1.The_RealNumber_Axiom_system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实数集公理系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.Real_number/2.Completeness_Closed_nested_interval/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    完备性-闭区间套
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.Real_number/3.Completeness_Finite_covering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    完备性-有限覆盖
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.Real_number/4.Completeness_Accumulative_point_Principle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    完备性-聚点原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.Real_number/5.Completeness_Cauchy_Principle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    完备性-Cauchy原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.Real_number/6.Completeness_Dedekind_Principle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    完备性-Dedekind原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.Real_number/7.Completeness_Supremum_Principle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    完备性-确界原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.Real_number/8.Completeness_Monotonically_bounded_Principle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    完备性-单调有界原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0.Real_number/9.Compactness_Principle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    完备性-致密性原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1_2" id="__nav_2_1_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    极限理论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            极限理论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.Limitation/Function_limitation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    函数极限
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.Limitation/Sequence_limitation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    序列极限
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1_3" id="__nav_2_1_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    微分理论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            微分理论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.Differential/Legendre_polynomial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Legendre多项式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1_4" id="__nav_2_1_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    积分理论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            积分理论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.Integral/Riemann_integral/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Riemann积分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1_5" id="__nav_2_1_1_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    级数理论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_1_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            级数理论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    级数
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    级数
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本内容
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      正项级数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      任意项级数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      级数乘法
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Power_series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    幂级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fourier_series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier级数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fourier_series%28H%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier级数(H)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Approximation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    级数逼近
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    代数
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    线性代数
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            线性代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1_1" id="__nav_2_2_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    线性映射
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            线性映射
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Jordan_form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jordan标准型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Linear_function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Linear_space_with_Measurement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    有度量的线性空间
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1_2" id="__nav_2_2_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    矩阵
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            矩阵
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/1.Linear_Algebra/2.Matrix/Quadratic_form_and_Real_symmetric_matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二次型与实对称矩阵
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/1.Linear_Algebra/2.Matrix/Unitary_similarity_and_Unitary_equivalence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    酉相似与酉等价
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/1.Linear_Algebra/2.Matrix/Matrix_factorization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    矩阵分解
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1_3" id="__nav_2_2_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    多项式
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            多项式
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/1.Linear_Algebra/3.Polynomial/Single_variable_Polynomial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    单元多项式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    抽象代数
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            抽象代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/2.Abstract_Algebra/1.Group/Group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    群
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/2.Abstract_Algebra/2.Ring/Ring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    环
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2.Algebra/2.Abstract_Algebra/3.Field/Field/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    域
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    拓扑
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            拓扑
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    点集拓扑
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            点集拓扑
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../3.Topology/Point_set_Topology/Continuous_mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    连续映射
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    工具箱
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            工具箱
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    不等式
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            不等式
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Inequality/Abel_Inequality/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abel不等式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    代数相关
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            代数相关
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Algebra_related/Application_of_Determinant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    行列式的应用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Algebra_related/Incidence_matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关联矩阵
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Algebra_related/Commutative_matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    可交换的线性变换
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Algebra_related/Cryptography_M-sequence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    密码学·m序列
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Algebra_related/Cryptography_LinearCode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    密码学·线性码
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    恒等式
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            恒等式
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Identical_equation/Abel_identity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abel恒等式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Identical_equation/Trigonometric_identity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三角恒等式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Identical_equation/Integral_identity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    积分恒等式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    组合相关
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            组合相关
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Combinatorics_related/Drawer_Principle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    抽屉原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tools/Combinatorics_related/PageRank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PageRank 问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本内容
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      正项级数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      任意项级数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      级数乘法
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p><em>#历史上开始时微积分尚不严谨时，级数相关的研究甚至早于数列，极限等严格化定义</em></p>
+<h1 id="_1">数项级数</h1>
+<h2 id="_2">基本内容</h2>
+<p>数项级数形式上是可数无穷个数之和，本质上是极限过程，这样的结果并不在四则运算的范畴内，也即如一定要算出个结果来，就需要再填人为定义，当然，必须是合理的。</p>
+<p>下面是一种最常见的定义数项级数结果的方法：</p>
+<p><strong>定义</strong>: 无穷级数 <span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=1}^{\infty}a_n=a_1+a_2+\cdots+a_n+\cdots\)</span>\)</span>的前 <span class="arithmatex">\(n\)</span> 项和<span class="arithmatex">\(<span class="arithmatex">\(S_n=a_1+a_2+\cdots+a_n\)</span>\)</span>称为这个技术的第 <span class="arithmatex">\(n\)</span> 个<strong>部分和</strong> . 若部分和数列 <span class="arithmatex">\(\{S_n\}\)</span> 有有限的极限 <span class="arithmatex">\(S\)</span> , 则称该级数<strong>收敛</strong>, 其<strong>和</strong>为 <span class="arithmatex">\(S\)</span> .
+记作: <span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=1}^{\infty}a_n=S\)</span>\)</span> 若 <span class="arithmatex">\(\{S_n\}\)</span> 无有限的极限, 则称该级数<strong>发散</strong> .</p>
+<p>两类可以用基本方法求出结果的级数：
+    <span class="arithmatex">\((1)\)</span> 等比(几何)级数：<span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=0}^{\infty}q^{n}=\frac{1}{1-q},\:(|q|&lt;1)\)</span>\)</span> 当 <span class="arithmatex">\(|q|\geq1\)</span> 时, 级数发散
+    <span class="arithmatex">\((2)\)</span> 裂项：<span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=1}^{\infty}\frac{1}{(sn-p)(sn+q)}=\frac{1}{s(s-p)},(s=p+q)\)</span>\)</span></p>
+<p><strong>定理</strong>: 级数 <span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span>\)</span> 收敛的必要条件为 <span class="arithmatex">\(<span class="arithmatex">\(\lim_{n\to\infty}a_n=0\)</span>\)</span></p>
+<p><strong>定理</strong>: 若级数 <span class="arithmatex">\(\sum_{k=1}^{\infty}a_k\)</span> 和 <span class="arithmatex">\(\sum_{k=1}^{\infty}b_k\)</span> 都收敛, 则级数 <span class="arithmatex">\(<span class="arithmatex">\(\sum_{k=1}^{\infty}(\alpha a_k+\beta b_k)\)</span>\)</span> 也收敛, 且 <span class="arithmatex">\(\sum_{k=1}^{\infty}(\alpha a_k+\beta b_k)=\alpha\sum_{k=1}^{\infty}a_k+\beta\sum_{k=1}^{\infty}b_k\)</span> , 这里 <span class="arithmatex">\(\alpha\)</span> 和 <span class="arithmatex">\(\beta\)</span> 为任意实数 .</p>
+<p><em>便是数列极限的运算法则</em></p>
+<p><strong>定理</strong>: 收敛级数 <span class="arithmatex">\(\sum_{n=0}^{\infty}a_n\)</span> , 将级数的项任意结合但不改变其先后次序, 得到的新级数<span class="arithmatex">\(<span class="arithmatex">\((a_1+\cdots+a_{k_1})+(a_{k_1+1}+\cdots+a_{k_2})+\cdots+(a_{k_{n-1}+1}+\cdots+a_{k_n})+\cdots\)</span>\)</span> 即<span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=1}^{\infty}(\sum_{m=k_{n-1}+1}^{k_n}a_m)\)</span>\)</span> 收敛, 这里 <span class="arithmatex">\(0=k_0&lt;k_1&lt;k_2&lt;\cdots\)</span> , 且新级数与原级数有相同的和 .</p>
+<p><em>数列收敛，任意子列收敛于相同值</em></p>
+<p>上述命题的逆命题自然也是不成立的，但若再加一定条件：</p>
+<p><strong>定理</strong>: 若<span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=1}^{\infty}(\sum_{m=k_{n-1}+1}^{k_n}a_m)=(a_1+\cdots+a_{k_1})+(a_{k_1+1}+\cdots+a_{k_2})+\cdots+(a_{k_{n-1}+1}+\cdots+a_{k_n})+\cdots\)</span>\)</span> 中每个括号内的项都分别有相同的符号, 则从该级数收敛可推出 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛, 且与该级数和相同 .</p>
+<p><strong>定理</strong>: 在级数中去掉或改变有限项不会影响级数的敛散性 .</p>
+<h2 id="_3">正项级数</h2>
+<p>若对 <span class="arithmatex">\(\forall n=1,2,...\)</span> ，都有 <span class="arithmatex">\(a_n\geq0\)</span> ，则称级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 为<strong>正项级数</strong> </p>
+<p><strong>定理</strong>: 正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛的充要条件为其部分和数列 <span class="arithmatex">\(\{S_n\}\)</span> 有界 .</p>
+<p><em>单调有界原理</em></p>
+<p><strong>比较判别法</strong>: 设有正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 和 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> , 若 <span class="arithmatex">\(\exists N\in N^*\)</span> , 使得 <span class="arithmatex">\(n\geq N\)</span> 时有<span class="arithmatex">\(<span class="arithmatex">\(a_n\leq b_n\)</span>\)</span> 那么: 
+    <span class="arithmatex">\((1)\)</span> <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 收敛, 则 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛
+    <span class="arithmatex">\((2)\)</span> <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 发散, 则 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 发散</p>
+<p><strong>比较判别法的极限形式</strong>: 设有正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 和 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> , 若 <span class="arithmatex">\(<span class="arithmatex">\(\lim_{n\to\infty}\frac{a_n}{b_n}=l\)</span>\)</span> 那么: 
+    <span class="arithmatex">\((1)\)</span> 若 <span class="arithmatex">\(0&lt;l&lt;+\infty\)</span> , 则 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 和 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 同敛散
+    <span class="arithmatex">\((2)\)</span> 若 <span class="arithmatex">\(l=0\)</span> , 则当 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 收敛时, <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 也收敛
+    <span class="arithmatex">\((3)\)</span> 若 <span class="arithmatex">\(l=+\infty\)</span> , 则当 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 发散时, <span class="arithmatex">\(\sum_{n_1}^{\infty}a_n\)</span> 也发散</p>
+<p>比较判别法是核心的判别法，理由是其余很多判别法都源于此</p>
+<p><strong>Cauchy积分判别法</strong>: 设当 <span class="arithmatex">\(x\geq1\)</span> 时, <span class="arithmatex">\(f(x)\)</span> 非负且递减, 则无穷级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}f(n)\)</span> 和 <span class="arithmatex">\(\int_1^{\infty}f(x)\mathrm{dx}\)</span> 同敛散 .</p>
+<p><em>可以由面积原理得到</em></p>
+<p>由积分判别法可以得到一类常用参照级数的敛散性判别：</p>
+<p><strong>p-级数</strong>: 级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}\frac{1}{n^p}\)</span> 收敛当且仅当 <span class="arithmatex">\(p\geq1\)</span> .
+<strong>广义-p级数</strong>: 
+    <span class="arithmatex">\((i)\)</span>级数 <span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=2}^{\infty}\frac{1}{n^p(\ln n)^{q}}\begin{cases}\,收敛\quad&amp;,p&gt;1\\\,发散\quad&amp;,p&lt;1\\\,收敛\quad&amp;,p=1且q&gt;1\\\,发散\quad&amp;,p=1且q\leq1\end{cases}\)</span>\)</span> <span class="arithmatex">\((ii)\)</span>级数<span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=3}^{\infty}\frac{1}{n^p(\ln n)^q(\ln\ln n)^r}\begin{cases}\,收敛\quad&amp;,p&gt;1\\\,发散\quad&amp;,p&lt;1\\\,收敛\quad&amp;,p=1且q&gt;1\\\,发散\quad&amp;,p=1且q&lt;1\\\,收敛\quad&amp;,p=1且q=1且r&gt;1\\\,发散\quad&amp;,p=1且q=1且r\leq1\end{cases}\)</span>\)</span> <span class="arithmatex">\(\cdots\cdots\)</span></p>
+<p><strong>Cauchy判别法</strong>: 
+    设 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 为一个正项级数, 
+    <span class="arithmatex">\((普通形式)\)</span> 
+        <span class="arithmatex">\((1)\)</span> 若 <span class="arithmatex">\(\exists\,q&lt;1\)</span> , 使得 <span class="arithmatex">\(n\)</span> 足够大时便有<span class="arithmatex">\(<span class="arithmatex">\(\sqrt[n]{a_n}\leq q&lt;1\)</span>\)</span> 则级数收敛
+        <span class="arithmatex">\((2)\)</span> 若存在无穷多个 <span class="arithmatex">\(n\)</span> 使得<span class="arithmatex">\(<span class="arithmatex">\(\sqrt[n]{a_n}\geq1\)</span>\)</span> 则级数发散
+    <span class="arithmatex">\((极限形式)\)</span>
+        若 <span class="arithmatex">\(\forall n\in N\)</span> , <span class="arithmatex">\(a_n\geq0\)</span> , 且<span class="arithmatex">\(<span class="arithmatex">\(\limsup_{n\to{\infty}}\sqrt[n]{a_n}=q\)</span>\)</span>则:<br />
+<span class="arithmatex">\((1)\)</span> <span class="arithmatex">\(q&lt;1\)</span> 时, 级数收敛
+        <span class="arithmatex">\((2)\)</span> <span class="arithmatex">\(q&gt;1\)</span> 时, 级数发散
+        <span class="arithmatex">\((3)\)</span> <span class="arithmatex">\(q=1\)</span> 时, 无法判断</p>
+<p><strong>分式比较判别法</strong>: 有两个正数列 <span class="arithmatex">\(\{a_n\},\{b_n\}\)</span> , 若 <span class="arithmatex">\(n\geq n_0\)</span> 时, 有 <span class="arithmatex">\(<span class="arithmatex">\(\frac{a_{n+1}}{a_n}\leq\frac{b_{n+1}}{b_n}\)</span>\)</span> 则
+    <span class="arithmatex">\((1)\)</span> 当 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 收敛时, <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 也收敛
+    <span class="arithmatex">\((2)\)</span> 当 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 发散时, <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 也发散</p>
+<p>在分式比较判别法中取 <span class="arithmatex">\(b_n=q^n\,(0&lt;q&lt;1)\)</span> 可得到 D'Alembert判别法</p>
+<p><strong>D'Alembert判别法</strong>: 设 <span class="arithmatex">\(a_n&gt;0\)</span>
+    <span class="arithmatex">\((普通形式)\)</span>
+        <span class="arithmatex">\((1)\)</span> 若存在正数 <span class="arithmatex">\(q&lt;1\)</span> , 使得 <span class="arithmatex">\(n\)</span> 足够大时有<span class="arithmatex">\(<span class="arithmatex">\(\frac{a_{n+1}}{a_n}\leq q\)</span>\)</span> 则级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛
+        <span class="arithmatex">\((2)\)</span> 若 <span class="arithmatex">\(n\)</span> 足够大时有<span class="arithmatex">\(<span class="arithmatex">\(\frac{a_{n+1}}{a_n}\geq1\)</span>\)</span> 则级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 发散
+    <span class="arithmatex">\((极限形式)\)</span>
+        <span class="arithmatex">\((1)\)</span> 若 <span class="arithmatex">\(\limsup_{n\to{\infty}}\frac{a_{n+1}}{a_n}=q&lt;1\)</span> , 则 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n&lt;+\infty\)</span>
+        <span class="arithmatex">\((2)\)</span> 若 <span class="arithmatex">\(\liminf_{n\to\infty}\frac{a_{n+1}}{a_n}=q^{'}&gt;1\)</span> , 则 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n=+\infty\)</span>
+        <span class="arithmatex">\((3)\)</span> 若 <span class="arithmatex">\(q=1\)</span> 或 <span class="arithmatex">\(q^{'}=1\)</span> , 则结果无法判断</p>
+<p><em>对于任意的正数列 <span class="arithmatex">\(\{a_n\}\)</span> , 都有 <span class="arithmatex">(<span class="arithmatex">\(\liminf_{n\to\infty}\frac{a_{n+1}}{a_n}\leq\liminf_{n\to\infty}\sqrt[n]{a_n}\leq\limsup_{n\to\infty}\sqrt[n]{a_n}\leq\limsup_{n\to\infty}\frac{a_{n+1}}{a_n}\)</span>\)</span> 这可以说明理论上而言Cauchy判别法要比D'Alembert判别法的应用范围更宽泛</em></p>
+<p>上面的判别法都是应用了比较判别法，以几何级数为参照得到的</p>
+<p>下面以 <span class="arithmatex">\(p-\)</span>级数 乃至 广义 <span class="arithmatex">\(p-\)</span>级数 为参照 还可以得到更多更为精确的判别法</p>
+<p><strong>Raabe判别法</strong>: 设 <span class="arithmatex">\(a_n&gt;0\)</span>
+    <span class="arithmatex">\((普通形式)\)</span>
+        <span class="arithmatex">\((1)\)</span> 若存在正数 <span class="arithmatex">\(r&gt;1\)</span> , 使得 <span class="arithmatex">\(n\)</span> 足够大时有 <span class="arithmatex">\(<span class="arithmatex">\(n(\frac{a_n}{a_{n+1}}-1)\geq r\)</span>\)</span> 则该级数收敛
+        <span class="arithmatex">\((2)\)</span> 若 <span class="arithmatex">\(n\)</span> 足够大时有 <span class="arithmatex">\(<span class="arithmatex">\(n(\frac{a_n}{a_{n+1}}-1)\leq1\)</span>\)</span> 则该级数发散
+    <span class="arithmatex">\((极限形式)\)</span> 
+        若 <span class="arithmatex">\(<span class="arithmatex">\(\lim_{n\to\infty}n(\frac{a_n}{a_{n+1}}-1)=l\)</span>\)</span> 即 <span class="arithmatex">\(<span class="arithmatex">\(\frac{a_n}{a_{n+1}}=1+\frac{l}{n}+o(\frac{1}{n})\qquad(n\to\infty)\)</span>\)</span> 则 <span class="arithmatex">\(l&gt;1\)</span> 时, 级数收敛; <span class="arithmatex">\(l&lt;1\)</span> 时, 级数发散</p>
+<p><strong>Gauss判别法</strong>: 设正数列 <span class="arithmatex">\(\{a_n\}\)</span> 满足条件<span class="arithmatex">\(<span class="arithmatex">\(\frac{a_n}{a_{n+1}}=1+\frac{1}{n}+\frac{\beta}{n\ln n}+o(\frac{1}{n\ln n})\qquad(n\to\infty)\)</span>\)</span> 那么当 <span class="arithmatex">\(\beta&gt;1\)</span> 时, 级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛, <span class="arithmatex">\(\beta&lt;1\)</span> 时, 级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 发散, <span class="arithmatex">\(\beta=1\)</span> 时, 无法判断</p>
+<p>诸如Rabbe判别法和Gauss判别法的同类型判别法称作<strong>Bertrand</strong>判别法</p>
+<p>可以看到<strong>基于比较判别法</strong>时可以通过类似的方法构造出无数种判别法，而总可以构造出新的判别法的同时，其实另一方面也道出也总需要新的判别方法，就是说不存在一个万能的<strong>作比较的收敛级数</strong>一定可以判别出级数收敛与否，下面的两个定理明确了这一点：</p>
+<p><strong>Du Bois-Reymond定理</strong>: 对于一个给定的收敛正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> , 一定存在一个收敛的正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> , 使得 <span class="arithmatex">\(\lim_{n\to\infty}\frac{a_n}{b_n}=0\)</span> </p>
+<p><strong>Abel定理</strong>: 对于一个给定的发散正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> , 一定存在一个发散正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> , 使得 <span class="arithmatex">\(\lim_{n\to\infty}\frac{b_n}{a_n}=0\)</span></p>
+<p>下面给出几个另类的判别法：</p>
+<p><strong>Cauchy凝聚判别法</strong>: 设 <span class="arithmatex">\(\{a_n\}\)</span> 为单调递减的正数列, 则 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛的充要条件为: 凝聚项级数<span class="arithmatex">\(<span class="arithmatex">\(\sum_{n=0}^{\infty}2^na_{2^n}=a_1+2a_2+4a_4+\cdots+2^na_{2^n}+\cdots\)</span>\)</span> 收敛</p>
+<p><em># 经常能看见用该方法证明调和级数发散</em></p>
+<p><strong>Sapagof判别法</strong>: 设正数数列 <span class="arithmatex">\(\{a_n\}\)</span> 单调递减, 则 <span class="arithmatex">\(\lim_{n\to\infty}a_n=0\)</span> 的充要条件为 <span class="arithmatex">\(\sum_{n=1}^{\infty}(1-\frac{a_{n+1}}{a_n})\)</span> 发散
+等价形式: 
+    <span class="arithmatex">\((1)\)</span> 设 <span class="arithmatex">\(\{a_n\}\)</span> 为单调递增的正数列, 则该数列与 <span class="arithmatex">\(\sum_{n=1}^{\infty}(1-\frac{a_n}{a_{n+1}})\)</span> 同敛散
+    <span class="arithmatex">\((2)\)</span> 若正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 的部分和为 <span class="arithmatex">\(\{S_n\}\)</span> , 则 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 与 <span class="arithmatex">\(\sum_{n=1}^{\infty}\frac{a_n}{S_n}\)</span> 同敛散</p>
+<p><strong>Kummer判别法</strong>: 
+    <span class="arithmatex">\((1)\)</span> 正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛的充要条件为存在正数数列 <span class="arithmatex">\(\{b_n\}\)</span> 和正数 <span class="arithmatex">\(\delta\)</span> , 使得 <span class="arithmatex">\(n\)</span> 足够大时有 <span class="arithmatex">\(<span class="arithmatex">\(b_n\cdot\frac{a_n}{a_{n+1}}-b_{n+1}\geq\delta&gt;0\)</span>\)</span> <span class="arithmatex">\((2)\)</span> 正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 发散的充要条件为存在发散的正项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}\frac{1}{b_n}\)</span> 使得 <span class="arithmatex">\(n\)</span> 充足大时<span class="arithmatex">\(<span class="arithmatex">\(b_n\cdot\frac{a_n}{a_{n+1}}-b_{n+1}\leq0\)</span>\)</span> </p>
+<p><em># Kummer判别法与比较判别法没有直接联系，而是源于部分和数列有上界的充要条件</em></p>
+<h2 id="_4">任意项级数</h2>
+<p>对于任意项级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> ，即不再要求 <span class="arithmatex">\(a_n\geq0\)</span> ，<span class="arithmatex">\(a_n\)</span> 的符号可以任意，可正可负</p>
+<p>这时直接对级数的部分和应用Cauchy收敛原理：</p>
+<p><strong>Cauchy收敛原理</strong>: 级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛的充要条件为 <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,N\in N^*\)</span> , 使得 <span class="arithmatex">\(\forall\,n&gt;N,\forall\,p\in N^*\)</span> , 有 <span class="arithmatex">\(<span class="arithmatex">\(|a_{n+1}+\cdots+a_{n+p}|&lt;\varepsilon\)</span>\)</span> 
+讨论一种特别地任意项级数，<strong>交错级数</strong>，形如 <span class="arithmatex">\(\sum_{n=1}^{\infty}(-1)^{n-1}a_n\)</span> ，这里 <span class="arithmatex">\(a_n&gt;0\)</span></p>
+<p><strong>Leibniz判别法</strong>: 如果 <span class="arithmatex">\(\{a_n\}\)</span> 递减趋于 <span class="arithmatex">\(0\)</span> , 则交错级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}(-1)^{n-1}a_n\)</span> 收敛</p>
+<p>通过[[Abel恒等式]]可以得到[[Abel不等式]]进而有下面两个判别法：</p>
+<p><strong>Dirichlet判别法</strong>: 设 <span class="arithmatex">\(\{a_k\},\{b_k\}\)</span> 是两个数列, <span class="arithmatex">\(S_k=\sum_{i=1}^{k}a_i\)</span> , 若它们满足: 
+    <span class="arithmatex">\((a)\)</span> <span class="arithmatex">\(\{b_k\}\)</span> 单减趋于零
+    <span class="arithmatex">\((b)\)</span> <span class="arithmatex">\(\{S_k\}\)</span> 有界
+则级数 <span class="arithmatex">\(\sum_{k=1}^{\infty}a_kb_k\)</span> 收敛</p>
+<p><strong>Abel判别法</strong>: 设 <span class="arithmatex">\(\{a_k\}\)</span> , <span class="arithmatex">\(\{b_k\}\)</span> 满足下面的条件: 
+    <span class="arithmatex">\((a)\)</span> <span class="arithmatex">\(\{b_k\}\)</span> 单调有界
+    <span class="arithmatex">\((b)\)</span> <span class="arithmatex">\(\sum_{k=1}^{\infty}a_k\)</span> 收敛
+则级数 <span class="arithmatex">\(\sum_{k=1}^{\infty}a_kb_k\)</span> 收敛</p>
+<p>_# 上面一般合称为 <strong>A-D判别法</strong>，出乎意料的是，这两个判别法均是级数收敛的充要条件
+即：
+若级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}u_n\)</span> 收敛，
+则存在适当的分解 <span class="arithmatex">\(u_n=a_nb_n\)</span> 使得：
+    <span class="arithmatex">\((1)\)</span> <span class="arithmatex">\(\lim_{n\to\infty}b_n=0\)</span> 且 <span class="arithmatex">\(\sum_{k=1}^na_k\)</span> 有界
+也存在适当的分解 <span class="arithmatex">\(u_n=a_n^{'}b_n^{'}\)</span> 使得：
+    <span class="arithmatex">\((2)\)</span> <span class="arithmatex">\(\{b_n\}\)</span> 单调有界 且 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛
+_</p>
+<p>尽管已经给出了一些任意项级数的判别法，但有些时候使用起来并不方便，有些笨重，但反而可以通过更简单的方法判断，如：
+<em>判断：<span class="arithmatex">\(\sum_{n=1}^{\infty}\frac{\sin nx}{2^n}\)</span> 收敛与否
+该级数并不单调，不适合Leibniz判别法，而Dirichlet判别法或是直接使用Cauchy收敛原理可以通过一些技巧性的恒等变形解决，Abel判别法理论上可以解决但并不容易
+然而：由于 <span class="arithmatex">\(|\frac{\sin nx}{2^n}|\\&lt;\frac{1}{2^n}\)</span> ，经过简易放缩再使用Cauchy收敛原理，由于右式对应级数收敛，原结果收敛就是显然的了</em></p>
+<p>下面引入内容</p>
+<p><strong>定理</strong>: 如果 <span class="arithmatex">\(\sum_{n=1}^{\infty}|a_n|\)</span> 收敛, 则 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 也收敛</p>
+<p><strong>定义</strong>: 
+    <span class="arithmatex">\((1)\)</span> 若 <span class="arithmatex">\(\sum_{n=1}^{\infty}|a_n|\)</span> 收敛, 则称 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> <strong>绝对收敛</strong> (绝对收敛必收敛)
+    <span class="arithmatex">\((2)\)</span> 若 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 收敛, 但 <span class="arithmatex">\(\sum_{n=1}^{\infty}|a_n|\)</span> 发散, 则称 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> <strong>条件收敛</strong></p>
+<p>为方便起见，常常有这么两种流行的记法：
+记 <span class="arithmatex">\(a_n^+=\frac{|a_n|+a_n}{2}\)</span> , <span class="arithmatex">\(a_n^-=\frac{|a_n|-a_n}{2}\)</span> ，它们分别表示级数中正项和负项的绝对大小和 <span class="arithmatex">\(0\)</span> 组成的数列，相当于把一个数列纵向拆分成了两个数列，但并不分别向前补位，事实上有 <span class="arithmatex">\(a_n=a_n^+-a_n^-\)</span> </p>
+<p>交换律，结合律对于无限项的情况并不一定成立，但<strong>级数收敛后，结合律便成立</strong>，然而交换律，或是说交换级数内无限项的求和次序却并不一定与原结果相同
+当<strong>级数绝对收敛时，交换律再次成立</strong>：</p>
+<p><strong>定理</strong>: 交换绝对收敛级数中无穷多项的次序, 所得的新级数仍然绝对收敛, 其和也不变</p>
+<p>另一方面，若级数条件收敛，结论不再成立，但会得到很有趣的结论</p>
+<p><strong>Riemann重排定理</strong>: 若级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 条件收敛, 则适当交换各项的次序, 可使结果收敛到任一事先指定的实数 <span class="arithmatex">\(S\)</span> , 或发散至 <span class="arithmatex">\(\infty\)</span></p>
+<h2 id="_5">级数乘法</h2>
+<p>两个有限和相乘 <span class="arithmatex">\((\sum_{i=1}^ma_i)(\sum_{j=1}^nb_j)\)</span> 遵循有限运算法则即可
+事实上结果为下面矩阵中元素之和：<span class="arithmatex">\(<span class="arithmatex">\(\begin{bmatrix}a_1b_1&amp;a_1b_2&amp;\cdots&amp;a_1b_n\\a_2b_1&amp;a_2b_2&amp;\cdots&amp;a_2b_n\\\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\a_mb_1&amp;a_mb_2&amp;\cdots&amp;a_mb_n\end{bmatrix}\)</span>\)</span>
+当相乘的对象变为两个作为无限和的级数时，<span class="arithmatex">\((\sum_{i=1}^{\infty}a_i)(\sum_{j=1}^{\infty}b_j)\)</span>
+旨在它们都收敛时能找到一个简化的积级数 <span class="arithmatex">\(\sum_{k=1}^{\infty}c_k\)</span> 结果恰为这两个级数结果的乘积
+类比成无穷规格矩阵 <span class="arithmatex">\(<span class="arithmatex">\(\begin{bmatrix}a_1b_1&amp;a_1b_2&amp;\cdots &amp;a_1b_j&amp;\cdots\\a_2b_1&amp;a_2b_2&amp;\cdots&amp;a_2b_j&amp;\cdots\\\vdots&amp;\vdots&amp;\ddots&amp;\vdots&amp;\cdots\\a_ib_1&amp;a_ib_2&amp;\cdots&amp;a_ib_j&amp;\cdots\\\vdots&amp;\vdots&amp;\ddots&amp;\vdots&amp;\ddots\end{bmatrix}\)</span>\)</span> 对于无穷规格的矩阵而言，求和方法不再唯一，涉及到求和顺序的问题，有先前的结论，我们已经知道不同求和顺序会产生不同的结果，在众多求和方法中有两种方法最为常用：
+    <span class="arithmatex">\((\mathrm I)\)</span> ‘’按方块相加‘’, 即 <span class="arithmatex">\(<span class="arithmatex">\(S=\sum_{k=1}^{\infty}(\sum_{\max\{i,j\}=k}a_ib_j)=a_1b_1+(a_1b_2+a_2b_2+a_2b_1)+(a_1b_3+a_2b_3+a_3b_3+a_3b_2+a_3b_1)+\cdots\)</span>\)</span>
+    <span class="arithmatex">\((\mathrm{II})\)</span> “按对角线相加”, 即 <span class="arithmatex">\(<span class="arithmatex">\(S=\sum_{k=2}^{\infty}(\sum_{i+j=k}a_ib_j)=a_1b_1+(a_1b_2+a_2b_1)+(a_1b_3+a_2b_2+a_3b_1)+\cdots\)</span>\)</span>
+第二种求和方法作为我们讨论的核心，称为<strong>Cauchy乘积</strong>，即 <span class="arithmatex">\(\sum_{n=1}^{\infty}c_n\)</span> ，这里 <span class="arithmatex">\(c_n=\sum_{i+j=n+1}^{\infty}a_ib_j\)</span> 
+理想情况下，当然希望有 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n=A\)</span> , <span class="arithmatex">\(\sum_{n=1}^{b_n}=B\)</span> , 则 <span class="arithmatex">\(\sum_{n=1}c_n=AB\)</span> 
+但这并不一定成立，例如：级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}(-1)^{n-1}\frac{1}{\sqrt n}\)</span> 收敛，但它与自身的Cauchy乘积却发散</p>
+<p><strong>定理</strong>: 若级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 和 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 都绝对收敛, 其和分别为 <span class="arithmatex">\(A\)</span> , <span class="arithmatex">\(B\)</span> , 则将 <span class="arithmatex">\(a_ib_j\)</span> 按照任意方式遍历 <span class="arithmatex">\(i,j\in N^*\)</span> 求和得到的结果都是收敛的, 且等于 <span class="arithmatex">\(AB\)</span></p>
+<p><strong>Mertens定理</strong>: 设级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 和 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 都收敛, 其和分别为 <span class="arithmatex">\(A\)</span> , <span class="arithmatex">\(B\)</span> , 若其中至少有一个级数绝对收敛, 则它们的Cauchy乘积收敛于 <span class="arithmatex">\(AB\)</span></p>
+<p><strong>Abel定理</strong>: 设级数 <span class="arithmatex">\(\sum_{n=1}^{\infty}a_n\)</span> 和 <span class="arithmatex">\(\sum_{n=1}^{\infty}b_n\)</span> 都收敛, 其和分别为 <span class="arithmatex">\(A\)</span> , <span class="arithmatex">\(B\)</span> , 若它们的Cauchy乘积收敛, 则必收敛于 <span class="arithmatex">\(AB\)</span></p>
+<h1 id="_6">函数项级数</h1>
+<h2 id="_7">基本内容</h2>
+<p><strong>定义</strong>: 在 <span class="arithmatex">\([a,b]\)</span> 定义的一列函数 <span class="arithmatex">\(u_1(x),u_2(x),...,u_n(x),...\)</span> , 称为 <span class="arithmatex">\([a,b]\)</span> 上的一个<strong>函数列</strong>, 若取定 <span class="arithmatex">\(x_0\in[a,b]\)</span> , 得到的数列 <span class="arithmatex">\(\{u_n(x_0)\}\)</span> 为一个数列, 若其收敛, 则称函数列<strong>在 <span class="arithmatex">\(x_0\)</span> 处收敛</strong>, 否则称<strong>在 <span class="arithmatex">\(x_0\)</span> 处发散</strong>, 若 <span class="arithmatex">\(\{u_n(x)\}\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上任一点处收敛, 则称其在 <span class="arithmatex">\([a,b]\)</span> 上<strong>收敛</strong>, 更精确来说称为<strong>逐点收敛</strong>, 函数列在定义域内收敛的点组成的集合称为<strong>收敛点集</strong>, 发散的点组成的集合称为<strong>发散点集</strong>
+当函数列 <span class="arithmatex">\(\{u_n(x)\}\)</span> 在 <span class="arithmatex">\(E\subset[a,b]\)</span> 上收敛时, 对于 <span class="arithmatex">\(\forall\,x\in E\)</span> , 记 <span class="arithmatex">\(u(x)=\lim_{n\to\infty}u_n(x)\)</span> , 则 <span class="arithmatex">\(u(x)\)</span> 为一个函数, 称为函数列 <span class="arithmatex">\(\{u_n(x)\}\)</span> 的<strong>极限函数</strong>, 记作 <span class="arithmatex">\(n\to\infty\)</span> 时, 在 <span class="arithmatex">\(E\)</span> 上 <span class="arithmatex">\(u_n\to u\)</span></p>
+<p><strong>定义</strong>: 在 <span class="arithmatex">\([a,b]\)</span> 上的一列函数 <span class="arithmatex">\(u_1(x),u_2(x),...,u_n(x),...\)</span> ,称 <span class="arithmatex">\(\sum_{n=1}^{\infty}u_n(x)\)</span> 为 <span class="arithmatex">\([a,b]\)</span> 上的一个<strong>函数项级数</strong>,
+若取定 <span class="arithmatex">\(x_0\in[a,b]\)</span> , 得到的 <span class="arithmatex">\(\sum_{n=1}^{\infty}u_n(x_0)\)</span> 为一个数项级数, 若其收敛, 则称函数项级数<strong>在 <span class="arithmatex">\(x_0\)</span> 处收敛</strong>, 否则称<strong>在 <span class="arithmatex">\(x_0\)</span> 处发散</strong>, 若 <span class="arithmatex">\(\sum_{n=1}^{\infty}u_n(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上任一点处收敛, 则称其在 <span class="arithmatex">\([a,b]\)</span> 上<strong>收敛</strong>, 更精确来说称为<strong>逐点收敛</strong>, 函数项级数在定义域内收敛的点组成的集合称为<strong>收敛点集</strong>, 发散的点组成的集合称为<strong>发散点集</strong>
+当 <span class="arithmatex">\(\sum_{n=1}^{\infty}u_n(x)\)</span> 在 <span class="arithmatex">\(E\subset[a,b]\)</span> 上收敛时, 对于 <span class="arithmatex">\(\forall\,x\in E\)</span> , 记 <span class="arithmatex">\(S(x)=\sum_{n=1}^{\infty}u_n(x)\)</span> , 则 <span class="arithmatex">\(S(x)\)</span> 为一个函数, 称为函数项级数的<strong>和函数</strong></p>
+<p>接下来首先要研究的<strong>核心问题</strong>有三：
+    <span class="arithmatex">\((a)\)</span> 收敛时, 若 <span class="arithmatex">\(u_n(x)\)</span> <span class="arithmatex">\((\forall\,n)\)</span> 连续, 是否有 <span class="arithmatex">\(u(x)\)</span> 连续?
+    <span class="arithmatex">\((b)\)</span> 收敛时, 若 <span class="arithmatex">\(u_n(x)\)</span> <span class="arithmatex">\((\forall\,n)\)</span> 可导, 是否有 <span class="arithmatex">\(u(x)\)</span> 可导? 若可导, 是否相等?
+    <span class="arithmatex">\((c)\)</span> 收敛时, 若 <span class="arithmatex">\(u_n(x)\)</span> <span class="arithmatex">\((\forall\,n)\)</span> 可积, 是否有 <span class="arithmatex">\(u(x)\)</span> 可积? 若可积, 是否相等? <span class="arithmatex">\((\mathrm{Riemann}可积)\)</span> </p>
+<p>在函数项级数仅仅收敛时，上述<strong>三个问题均有反例</strong>
+_经典反例：
+    <span class="arithmatex">\(({\color{red} a})({\color{red} b})\)</span> 取 <span class="arithmatex">\(u_n(x)=x^n\)</span> , <span class="arithmatex">\(x\in[0,1]\)</span> , 极限函数为 <span class="arithmatex">\(<span class="arithmatex">\(u(x)=\begin{cases}0\quad,x\in[0,1)\\1\quad,x=1\end{cases}\)</span>\)</span> <span class="arithmatex">\(u(x)\)</span> 在 <span class="arithmatex">\(1\)</span> 处不连续, 进而不可导
+    <span class="arithmatex">\(({\color{red} b})\)</span> 取 <span class="arithmatex">\(u_n(x)=\frac{\sin nx}{\sqrt n}\)</span> , <span class="arithmatex">\(x\in[0,1]\)</span> , 显然极限函数为 <span class="arithmatex">\(u(x)=0\)</span> , 那么 <span class="arithmatex">\(u^{'}(x)=0\)</span> , 但 <span class="arithmatex">\(u^{'}_n(x)=\sqrt n\cos nx\nrightarrow0\quad(n\to\infty)\)</span> , 即均可导但结果不相等
+    <span class="arithmatex">\(({\color{red}c})\)</span> 取 <span class="arithmatex">\(u_n(x)\)</span> , <span class="arithmatex">\(x\in[0,1]\)</span> , <span class="arithmatex">\(u_n(x)\)</span> 定义如下: 已知有理数可列, 那么记 <span class="arithmatex">\(\{Q_n\}\)</span> 逐一列出了 <span class="arithmatex">\([0,1]\)</span> 中所有有理数唯一一次, 考虑 <span class="arithmatex">\(E_n=\{Q_k:k\leq n\}\)</span>, 令 <span class="arithmatex">\(u_n(x)=\chi_{(x\in E_n)}\)</span> , <span class="arithmatex">\(x\in[0,1]\)</span> 
+    则可知 <span class="arithmatex">\(\int_0^1u_n(x)\mathrm{dx}=0\)</span> , 但 <span class="arithmatex">\(\lim_{n\to\infty}u_n(x)=D(x)\notin R[0,1]\)</span> , 即极限函数不一定可积<br />
+        [具体一点: 其实可以写出 <span class="arithmatex">\(u_n(x)=\lim_{m\to\infty}(\cos n!\pi x)^{2m}\)</span>]
+    <span class="arithmatex">\(({\color{red}c})\)</span> 取 <span class="arithmatex">\(u_n(x)=-2nxe^{-nx^2}\)</span> , <span class="arithmatex">\(x\in[0,1]\)</span> , 则极限函数 <span class="arithmatex">\(u(x)=0\)</span> , 那么 <span class="arithmatex">\(\int_0^1u(x)\mathrm{dx}=0\)</span> , 但 <span class="arithmatex">\(\int_0^1u_n(x)\mathrm{dx}=(e^{-nx^2})|_0^1=e^{-n}-1\nrightarrow0\quad(n\to\infty)\)</span> , 即均可积但结果不相等 
+_</p>
+<p><em># 极限运算对连续函数类，可导函数类，可积函数类均不封闭</em></p>
+<h2 id="_8">一致收敛</h2>
+<h3 id="_9">函数族</h3>
+<p>函数列更一般的讲，可以说是一个二元函数，或是一个含参变量的函数
+关于 <span class="arithmatex">\(x\in X\)</span> 的函数列通项 <span class="arithmatex">\(f_n(x)\)</span> 实际上可以看成一个定义在 <span class="arithmatex">\(X\times N\)</span> 上的二元函数
+下面不专门研究以正整数为参变量的函数列，不妨先讨论一下更为一般的以任意集合为参变量取值的函数族的性质</p>
+<p><strong>定义</strong>: 如果两个变量 <span class="arithmatex">\(x,t\)</span> 的函数 <span class="arithmatex">\((x,t)\mapsto F(x,t)\)</span> 定义于集合 <span class="arithmatex">\(X\times T\)</span> , 并且可以将变量 <span class="arithmatex">\(t\in T\)</span> 分离出来并成为<strong>参数</strong>或<strong>参变量</strong>, 则上述函数称为<strong>依赖于参数 <span class="arithmatex">\(t\)</span> 的函数族</strong>, 这时, 集合 <span class="arithmatex">\(T\)</span> 称为<strong>参数集</strong>或<strong>参数域</strong>, 函数族本身常记作 <span class="arithmatex">\(f_t(x)\)</span> 或 <span class="arithmatex">\(\{f_t,t\in T\}\)</span> 的形式</p>
+<p><strong>定义</strong>: 设 <span class="arithmatex">\(\{f_t:X\to\mathbb R,t\in T\}\)</span> 是依赖于参数 <span class="arithmatex">\(t\)</span> 的函数族, <span class="arithmatex">\(\mathfrak B\)</span> 是参数集 <span class="arithmatex">\(T\)</span> 中的基. 如果 <span class="arithmatex">\(\lim_{\mathfrak B}f_t(x)\)</span> 对于固定值 <span class="arithmatex">\(x\)</span> 存在, 我们就说该函数族<strong>在点 <span class="arithmatex">\(x\)</span> 收敛</strong>, 全部收敛点的集合称为该函数族在<strong>给定基 <span class="arithmatex">\(\mathfrak B\)</span> 上的收敛集</strong>. 若函数族在集合 <span class="arithmatex">\(E\subset X\)</span> 的每一点 <span class="arithmatex">\(x\)</span> 在基 <span class="arithmatex">\(\mathfrak B\)</span> 上收敛, 就说该函数族<strong>在集合 <span class="arithmatex">\(E\)</span> 和基 <span class="arithmatex">\(\mathfrak B\)</span> 上收敛</strong>, 将定义在 <span class="arithmatex">\(E\)</span> 上的函数 <span class="arithmatex">\(f(x):=\lim_{\mathfrak B}f_t(x)\)</span> 称为函数族 <span class="arithmatex">\(f_t\)</span> <strong>在集合 <span class="arithmatex">\(E\)</span> 和基 <span class="arithmatex">\(\mathfrak B\)</span> 上的极限函数</strong>或<strong>极限</strong></p>
+<p><strong>定义</strong>: 函数 <span class="arithmatex">\(f_t:X\to\mathbb R\)</span> 构成函数族 <span class="arithmatex">\(\{f_t,t\in T\}\)</span> , <span class="arithmatex">\(\mathfrak B\)</span> 为 <span class="arithmatex">\(T\)</span> 中的基, 若 <span class="arithmatex">\(\lim_{\mathfrak B}f_t(x)=f(c)\)</span> <span class="arithmatex">\((\forall\,x\in E\subset X)\)</span> , 则称该函数族在集合 <span class="arithmatex">\(E\)</span> 和 基 <span class="arithmatex">\(\mathfrak B\)</span> 上<strong>逐点收敛到 <span class="arithmatex">\(f:E\to\mathbb R\)</span> <span class="arithmatex">(**, 常记为在 <span class="arithmatex">\(E\)</span> 上 <span class="arithmatex">(<span class="arithmatex">\(f_t\to_{\mathfrak B}f\)</span>\)</span> 
+<strong>定义</strong>: 函数 <span class="arithmatex">\(f_t:X\to\mathbb R\)</span> 构成函数族 <span class="arithmatex">\(\{f_t,t\in T\}\)</span> , <span class="arithmatex">\(\mathfrak B\)</span> 为 <span class="arithmatex">\(T\)</span> 中的基, 若 <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,B\in\mathfrak B\)</span> , <span class="arithmatex">\(s.t.\)</span> <span class="arithmatex">\(\forall\,t\in B\)</span> , <span class="arithmatex">\(x\in E\)</span> , 有 <span class="arithmatex">\(|f(x)-f_t(x)|&lt;\varepsilon\)</span> , 就称函数族在集合 <span class="arithmatex">\(E\)</span> 和基 <span class="arithmatex">\(\mathfrak B\)</span> 上**一致收敛到函数 <span class="arithmatex">\(f:E\to\mathbb R\)</span>** , 常记为在 <span class="arithmatex">\(E\)</span> 上\)</span><span class="arithmatex">\(f_t\rightrightarrows_{\mathfrak B}f\)</span>$ 
+用 <span class="arithmatex">\(\Delta_t(x)=|f(x)-f_t(x)|\)</span> 用于度量 <span class="arithmatex">\(f_t\)</span> 与 <span class="arithmatex">\(f\)</span> 间的偏差, 用 <span class="arithmatex">\(\Delta_t=\sup_{x\in E}\Delta_t(x)\)</span> 记在 <span class="arithmatex">\(E\)</span> 内两者的最大偏差(如果存在的话), 那么有 <span class="arithmatex">\(\Delta_t(x)\leq\Delta_t\)</span> <span class="arithmatex">\((\forall\,x\in E)\)</span> <span class="arithmatex">(<span class="arithmatex">\(\begin{align}在\,E上\,f_t\to_{\mathfrak B}f&amp;\iff在 \mathfrak B上\Delta_t(x)\to0\\在\,E上\,f_t\rightrightarrows_{\mathfrak B}f&amp;\iff在\mathfrak B上\Delta_t\to0\end{align}\)</span>\)</span> 
+ </strong>Cauchy收敛准则**: 设函数族 <span class="arithmatex">\(\{f_t:X\to\mathbb R,t\in T\}\)</span> , <span class="arithmatex">\(T\)</span> 有一个基 <span class="arithmatex">\(\mathfrak B\)</span> , 则该函数族在集合 <span class="arithmatex">\(E\subset X\)</span> 和基 <span class="arithmatex">\(\mathfrak B\)</span> 上一致收敛的充要条件为: <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,B\in\mathfrak B\)</span> , <span class="arithmatex">\(s.t.\)</span> <span class="arithmatex">\(\forall\,t_1,t_2\in B\)</span> , <span class="arithmatex">\(x\in E\)</span> , 有 <span class="arithmatex">\(|f_{t_1}(x)-f_{t_2}(x)|&lt;\varepsilon\)</span> </p>
+<p><em># 上面的定义都是基于实值函数，在任意度量空间中有着完全类似地定义，将 <span class="arithmatex">\(X\to\mathbb R\)</span> 换为 <span class="arithmatex">\(X\to Y\)</span> 这里 <span class="arithmatex">\(Y\)</span> 为度量空间，那么将 <span class="arithmatex">\(|f_{t_1}(x)-f_{t_2}(x)|\)</span> 改为 <span class="arithmatex">\(d_Y(f_{t_1}(x),f_{t_2}(x))\)</span> 即可，这里 <span class="arithmatex">\(d_Y\)</span> 为 <span class="arithmatex">\(Y\)</span> 中的度量
+同样，Cauchy收敛原理也是成立的，只要 <span class="arithmatex">\(Y\)</span> 是完备的度量空间</em></p>
+<h3 id="_10">函数项级数</h3>
+<p><strong>定义</strong>: 设 <span class="arithmatex">\(\{a_{n}:X\to \mathbb{C},n\in \mathbb{N}\}\)</span> 为复值函数序列, 如果序列(<strong>部分和</strong>) <span class="arithmatex">\(S_{m}(x)=\{\sum_{n=1}^ma_{n}(x),m\in \mathbb{N}\}\)</span> 在集合 <span class="arithmatex">\(E \subset X\)</span> 上收敛或是一致收敛, 则称级数 <span class="arithmatex">\(\sum_{n=1}^\infty a_{n}(x)\)</span> 在集合 <span class="arithmatex">\(E\)</span> 上<strong>收敛</strong>或是<strong>一致收敛</strong></p>
+<p>显然的，函数项级数收敛问题本质上也是函数列收敛的问题
+那么类似的有</p>
+<p><strong>Cauchy收敛准则</strong>: 函数项级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)\)</span> 在集合 <span class="arithmatex">\(E\subset X\)</span> 和基 <span class="arithmatex">\(\mathfrak B\)</span> 上一致收敛的充要条件为: <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,N\in\mathbb N\)</span> , <span class="arithmatex">\(s.t.\)</span> <span class="arithmatex">\(\forall\,m\geq n&gt;N\)</span> , <span class="arithmatex">\(x\in E\)</span> , 有 <span class="arithmatex">\(|a_n(x)+\cdots+a_m(x)|&lt;\varepsilon\)</span></p>
+<p><strong>定理</strong>: 函数项级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)\)</span> 在 <span class="arithmatex">\(E\)</span> 上一致收敛的必要条件是在 <span class="arithmatex">\(E\)</span> 上 <span class="arithmatex">\(a_n(x)\rightrightarrows0\)</span> </p>
+<p><strong>定义</strong>: 若对 <span class="arithmatex">\(\forall\,x\in E\)</span> , 数项级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)\)</span> 绝对收敛, 则称函数项级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)\)</span> 在 <span class="arithmatex">\(E\)</span> 上<strong>绝对收敛</strong></p>
+<p><strong>命题</strong>: 若有级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)\)</span> , <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}b_n(x)\)</span> , 只要 <span class="arithmatex">\(n\)</span> 足够大时在 <span class="arithmatex">\(E\)</span> 上有 <span class="arithmatex">\(|a_n(x)|\leq b_n(x)\)</span> , 则 <span class="arithmatex">\(<span class="arithmatex">\(\sum\limits_{n=1}^{\infty}b_n(x)一致收敛\implies\sum\limits_{n=1}^{\infty}a_n(x)绝对收敛且一致收敛\)</span>\)</span> 
+<strong>Weierstrass强函数检验法</strong>: 对于级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)\)</span> , 若存在收敛数项级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}M_n\)</span> , 使得 <span class="arithmatex">\(n\)</span> 足够大时<span class="arithmatex">\(<span class="arithmatex">\(\sup_{x\in E}|a_n(x)|\leq M_n\)</span>\)</span>成立, 则级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)\)</span> 在 <span class="arithmatex">\(E\)</span> 上绝对收敛且一致收敛, 这里 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}M_n\)</span> 称为一个 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}\)</span> 的<strong>优级数</strong></p>
+<p>作为应用，讨论一下有关幂级数的内容</p>
+<p><strong>定义</strong>: 形如<span class="arithmatex">\(<span class="arithmatex">\(\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n=a_0+a_1(x-x_0)+\cdots+a_n(x-x_0)^n+\cdots\)</span>\)</span>的函数项级数称为<strong>幂级数</strong></p>
+<p><strong>命题</strong>: 若幂级数 <span class="arithmatex">\(\sum\limits_{n=0}^{\infty}c_n(z-z_0)^n\)</span> 在点 <span class="arithmatex">\(\zeta\neq z_0\)</span> 处收敛, 则它在任何一个圆 <span class="arithmatex">\(K_q=\{z\in\mathbb{C}||z-z_0|&lt;q|\zeta-z_0|\}\,(0&lt;q&lt;1)\)</span> 内绝对收敛且一致收敛
+<strong>[证明]</strong>:
+    由于 <span class="arithmatex">\(|c_n(z-z_0)^n|=|c_n|\frac{|(z-z_0)^n|}{|(z_0-\zeta)^{n}|}|(z_0-\zeta)^{n}|&lt;|c_n||q|^n|z_0-\zeta|^n&lt;q^n\,(因为c_n(\zeta-z_0)^n\to0,故n充分大时|c_n(\zeta-z_0)^n|&lt;1)\)</span>由于级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}q^n\)</span> 收敛, 故原级数绝对收敛且一致收敛</p>
+<p>利用<strong>Weierstrass判别法</strong>只能判别即 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)\)</span> 绝对收敛又有 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}|a_n(x)|\)</span> 一致收敛的级数，但实际上存在一致收敛但不绝对收敛的级数；或是绝对收敛且一致收敛但 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}|a_n(x)|\)</span> 并不一致收敛的级数
+于是需要更强的判别法</p>
+<p>数项级数中的<strong>A-D判别法</strong>在函数项级数中有完全类似的命题，在此之前我们需要定义：</p>
+<p><strong>定义</strong>: 若 <span class="arithmatex">\(E\)</span> 上的函数列 <span class="arithmatex">\(\{f_n(x)\}\)</span> 满足 <span class="arithmatex">\(\forall\,x\in E\)</span> , <span class="arithmatex">\(\exists\,M(x)&gt;0\)</span> , <span class="arithmatex">\(s.t.\,|f_n(x)|\leq M(x)\)</span> 对 <span class="arithmatex">\(\forall\,n\in\mathbb{N}\)</span> 成立, 则称 <span class="arithmatex">\(\{f_n(x)\}\)</span> 在 <span class="arithmatex">\(E\)</span> 上<strong>逐点有界</strong>; 若 <span class="arithmatex">\(\exists\,M&gt;0\)</span> , <span class="arithmatex">\(s.t.\forall\,n\in\mathbb{N}\)</span> 都有 <span class="arithmatex">\(|f_{n}(x)|\leq M\)</span> 成立则称 <span class="arithmatex">\(\{f_n(x)\}\)</span> 在 <span class="arithmatex">\(E\)</span> 上<strong>一致有界</strong></p>
+<p>_例：
+    <span class="arithmatex">\(f_n(x)=x^n\)</span> 在 <span class="arithmatex">\((0,1)\)</span> 上一致有界, <span class="arithmatex">\(f_n(x)=nx^n\)</span> 在 <span class="arithmatex">\((0,1)\)</span> 上逐点有界但不一致有界
+_</p>
+<p><strong>Dirichlet判别法</strong>: <span class="arithmatex">\(E\)</span> 上的函数项级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)b_n(x)\)</span> , 记 <span class="arithmatex">\(S_n(x)=\sum\limits_{k=1}^na_k(x)\)</span> 若满足: 
+    <span class="arithmatex">\((a)\)</span> <span class="arithmatex">\(b_n(x)\rightrightarrows0\)</span> , <span class="arithmatex">\(n\to\infty\)</span> , 且对于固定的 <span class="arithmatex">\(x\in E\)</span> , <span class="arithmatex">\(\{b_n(x)\}\)</span> 是单调的
+    <span class="arithmatex">\((b)\)</span> <span class="arithmatex">\(S_n(x)\)</span> 在 <span class="arithmatex">\(E\)</span> 上一致有界
+则原级数在 <span class="arithmatex">\(E\)</span> 上一致收敛</p>
+<p><strong>Abel判别法</strong>: <span class="arithmatex">\(E\)</span> 上的函数项级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)b_n(x)\)</span> , 若满足: 
+    <span class="arithmatex">\((a)\)</span> <span class="arithmatex">\(\{b_n(x)\}\)</span> 对于固定的 <span class="arithmatex">\(x\in E\)</span> 单调, 且其一致有界
+    <span class="arithmatex">\((b)\)</span> <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}a_n(x)\)</span> 一致收敛
+则原级数在 <span class="arithmatex">\(E\)</span> 上一致收敛</p>
+<p>_关于 <strong>A-D判别法</strong>，它们本质上是对同一表达式两部分通过不同的方式分别控制得到的，意思是：
+<span class="arithmatex">\(<span class="arithmatex">\(\begin{align}\bigg|\sum\limits_{n=N}^{N+p}a_n(x)b_n(x)\bigg|&amp;=\bigg|b_{N+p}(x)\sum\limits_{n=N}^{N+p}a_n(x)-\sum\limits_{n=N}^{N+p-1}\bigg(\sum\limits_{k=N}^{n}a_k(x)\bigg)(b_n(x)-b_{n+1}(x))\bigg|\\&amp;\leq\bigg|b_{N+p}(x)\sum\limits_{n=N}^{N+p}a_n(x)\bigg|+\sum\limits_{n=N}^{N+p-1}\bigg|\sum\limits_{k=N}^{n}a_k(x)\bigg||b_n(x)-b_{n+1}(x)|\\&amp;=\begin{cases}\underbrace{\color{red}|b_{N+p}(x)|}_{\color{red}无穷小量}\underbrace{\color{blue}|\sum\limits_{n=N}^{N+p}a_n(x)|}_{\color{blue}有界量}+\underbrace{\color{red}\sum\limits_{n=N}^{N+p-1}|b_n(x)-b_{n+1}(x)|}_{\color{red}无穷小量}\underbrace{\color{blue}\bigg|\sum\limits_{k=N}^{n}a_k(x)\bigg|}_{\color{blue}有界量},\qquad(\mathrm{Dirichlet判别})\\\\\\\underbrace{\color{red}|b_{N+p}(x)|}_{\color{red}有界量}\underbrace{\color{blue}|\sum\limits_{n=N}^{N+p}a_n(x)|}_{\color{blue}无穷小量}+\underbrace{\color{blue}\sum\limits_{n=N}^{N+p-1}\bigg|\sum\limits_{k=N}^{n}a_k(x)\bigg|}_{\color{blue}无穷小量}\underbrace{\color{red}|b_n(x)-b_{n+1}(x)|}_{\color{red}有界量},\qquad(\mathrm{Abel判别})\end{cases}\end{align}\)</span>\)</span>
+_</p>
+<p>还有一些与判断函数项级数一致收敛与否的常见结论</p>
+<p><span class="arithmatex">\(1^\circ\)</span> 数项级数控制上下界
+<strong>命题</strong>: 区间 <span class="arithmatex">\([a,b]\)</span> 上的单调函数 <span class="arithmatex">\(u_n(x)\)</span> , <span class="arithmatex">\((\forall\,n)\)</span> , 如果级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n(a)\)</span> 和 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n(b)\)</span> 都绝对收敛, 则: 
+级数 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上绝对且一致收敛
+<strong>[证明]</strong>:
+    <span class="arithmatex">\(u_{n}(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上单调, 即一定有 <span class="arithmatex">\(|u_{n}(x)|\leq\max\{|u_{n}(a)|,|u_{n}(b)|\}\)</span> , 故由比较审敛法, 可知无论如何都有 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_{n}(x)\)</span> 绝对收敛</p>
+<p><span class="arithmatex">\(2^\circ\)</span> 连续函数受开边界性质影响
+<strong>命题</strong>: <span class="arithmatex">\(\{u_n(x)\}\)</span> 为 <span class="arithmatex">\([a,b]\)</span> 上的连续函数列, 若 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n(x)\)</span> 在 <span class="arithmatex">\([a,b)\)</span> 内的每一点收敛, 但 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n(b)\)</span> 发散, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n(x)\)</span> 在 <span class="arithmatex">\([a,b)\)</span> 上不一致收敛
+<strong>[证明]</strong>:
+    若 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_{n}(x)\)</span> 在 <span class="arithmatex">\([a,b)\)</span> 上一致收敛, 则 <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,N\in\mathbb{N}^{*}\)</span> , 使得 <span class="arithmatex">\(n&gt;N\)</span> , <span class="arithmatex">\(\forall\,p\in\mathbb{N}\)</span> , <span class="arithmatex">\(\forall\,x\in[a,b)\)</span> 时, 有 <span class="arithmatex">\(<span class="arithmatex">\(\bigg|\sum\limits_{m=n+1}^{n+p}u_{m}(x)\bigg|&lt;\varepsilon\)</span>\)</span>由于 </p>
+<p><span class="arithmatex">\(3^\circ\)</span> 点态推一致，局部推整体（有限覆盖）
+<strong>命题</strong>: 设 <span class="arithmatex">\([a,b]\)</span> 为有限闭区间, 若 <span class="arithmatex">\(\forall\,x\in[a,b]\)</span> , 存在包含 <span class="arithmatex">\(x\)</span> 的开区间 <span class="arithmatex">\(I_x\)</span> , 使得 <span class="arithmatex">\(\{f_n\}\)</span> 在 <span class="arithmatex">\(I_x\)</span> 上一致收敛于 <span class="arithmatex">\(f\)</span> , 则 <span class="arithmatex">\(\{f_n\}\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上一致收敛于 <span class="arithmatex">\(f\)</span></p>
+<p><span class="arithmatex">\(4^\circ\)</span> 受导函数控制
+<strong>命题(Bendixon判别法)</strong>: 设 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n(x)\)</span> 为 <span class="arithmatex">\([a,b]\)</span> 上的可微函数项级数, 且 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n^{'}(x)\)</span> 的部分和数列一致有界, 若 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上收敛, 则 <span class="arithmatex">\(\sum\limits_{n=1}^{\infty}u_n(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上一致收敛</p>
+<p>可以通过<strong>A-D判别法</strong>证明一个关于幂级数的结论</p>
+<p><strong>Abel第二定理</strong>: 若幂级数 <span class="arithmatex">\(\sum\limits_{n=0}^{\infty}c_n(z-z_0)^n\)</span> 在某点 <span class="arithmatex">\(\zeta\in\mathbb{C}\)</span> 收敛, 则它在以 <span class="arithmatex">\(z_0,\zeta\)</span> 为端点的闭区间上一致收敛
+<strong>[证明]</strong>:
+    在以 <span class="arithmatex">\(z_0,\zeta\)</span> 为端点的闭区间上的点 <span class="arithmatex">\(z\)</span> 可以表示为 <span class="arithmatex">\(z=z_0+(\zeta-z_0)t\)</span> , <span class="arithmatex">\(t\in[0,1]\)</span>
+    因此 <span class="arithmatex">\(\sum\limits_{n=0}^{\infty}c_n(z-z_0)^n=\sum\limits_{n=0}^{\infty}c_n(\zeta-z_0)^nt^n\)</span> 由于: 
+    <span class="arithmatex">\(\sum\limits_{n=0}^{\infty}c_n(\zeta-z_0)^n\)</span> (一致)收敛, 且有 <span class="arithmatex">\(t^n\)</span> 在 <span class="arithmatex">\(t\in[0,1]\)</span> 上一致有界且关于每个 <span class="arithmatex">\(t\)</span> 都单调递减
+    由 <span class="arithmatex">\(\rm{Abel}\)</span> 判别法即知原级数在区间上一致收敛</p>
+<h2 id="_11">极限交换</h2>
+<p>为了研究函数项级数的连续，可微，可积性，由于它们本质上都是极限过程，直觉上讲交换求和与极限次序结果是一样的，但这里的求和是无限和，故交换求和与极限就成为了交换极限与极限的问题，故我们研究更宽泛的极限交换的问题，即这些问题的通性</p>
+<h3 id="_12">两个极限运算可交换的条件</h3>
+<p><strong>定理</strong>: 设 <span class="arithmatex">\(\{F_{t},t\in T\}\)</span> 为依赖于参数 <span class="arithmatex">\(t\)</span> 的函数 <span class="arithmatex">\(F_t:X\to\mathbb{C}\)</span> 构成的函数族, <span class="arithmatex">\(\mathfrak B_X\)</span> 为 <span class="arithmatex">\(X\)</span> 中的基, <span class="arithmatex">\(\mathfrak B_T\)</span> 为 <span class="arithmatex">\(T\)</span> 中的基, 如果函数族在 <span class="arithmatex">\(X\)</span> 和基 <span class="arithmatex">\(\mathfrak B_T\)</span> 上一致收敛到函数 <span class="arithmatex">\(F:X\to\mathbb{C}\)</span> , 而极限 <span class="arithmatex">\(\lim_\limits{\mathfrak B_{X}}F_t(x)=A_t\)</span> 对于所有的 <span class="arithmatex">\(t\in T\)</span> 都存在, 则一定有累次极限 <span class="arithmatex">\(\lim_\limits{\mathfrak B_X}(\lim_\limits{\mathfrak B_T}F_t(x))\)</span> 和 <span class="arithmatex">\(\lim_\limits{\mathfrak B_T}(\lim_\limits{\mathfrak B_X}F_t(x))\)</span> 都存在, 且 <span class="arithmatex">\(<span class="arithmatex">\(\lim_\limits{\mathfrak B_X}(\lim_\limits{\mathfrak B_T}F_t(x))=\lim_\limits{\mathfrak B_T}(\lim_\limits{\mathfrak B_X}F_t(x))\)</span>\)</span>该结果可以用下面的图表示: <span class="arithmatex">\(<span class="arithmatex">\(\begin{align}&amp;{\color{red}F_t(x)\:\overrightarrow{\underset{\mathfrak B_T}{\longrightarrow}}}\:F(x)\\&amp;{\color{red}\small{\mathfrak B_X}\bigg\downarrow}\qquad\quad{\color{blue}\exists\bigg\downarrow{\small{\mathfrak B_X}}}\\&amp;\quad A_t\:\:\:{\color{blue}\xrightarrow[\mathfrak B_T]{\exists}\:\:\: A}\end{align}\)</span>\)</span>左上红色是定理条件, 右下蓝色是可得到的结论</p>
+<p>该定理的证明用到了分析手法中十分常见的<strong>三分法</strong>
+<strong>[证明]</strong>: 
+    已知 <span class="arithmatex">\(F_t(x)\underset{\mathfrak B_T}{\rightrightarrows} F(x)\)</span> ,
+        故 <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,B_T\in\mathfrak B_T\)</span> , <span class="arithmatex">\(s.t.\)</span> <span class="arithmatex">\(\forall\,t_{1},t_{2}\in B_T\)</span> , 有 <span class="arithmatex">\(|F_{t_1}(x)-F_{t_2}(x)|&lt;\frac{\varepsilon}{3}\)</span>
+    已知 <span class="arithmatex">\(\forall\,t\in T,F_t(x)\underset{\mathfrak B_X}{\to}A_t\)</span> , 
+        故 <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,B_X(t)\in\mathfrak B_X\)</span> , <span class="arithmatex">\(s.t.\,\forall\,x\in B_X(t)\)</span> , 有 <span class="arithmatex">\(|F_t(x)-A_t|&lt;\frac{\varepsilon}{3}\)</span> 
+    综合上面的条件
+    因此 <span class="arithmatex">\(\forall\,t_1,t_2\in B_T\)</span> , <span class="arithmatex">\(\exists\,B_X(t_1),B_X(t_2)\in\mathfrak B_X\)</span> , 使得: 
+    <span class="arithmatex">\(|F_{t_1}(x)-A_{t_1}|&lt;\frac{\varepsilon}{3}\)</span> , <span class="arithmatex">\(|F_{t_2}(x)-A_{t_2}|&lt;\frac{\varepsilon}{3}\)</span> 对 <span class="arithmatex">\(\forall\,x\in B_X(t_1)\cap B_X(t_2)\triangleq B_X(t)\in\mathfrak B_X\)</span> 成立
+    那么 <span class="arithmatex">\(<span class="arithmatex">\(|A_{t_1}-A_{t_2}|\leq|F_{t_1}(x)-A_{t_1}|+|F_{t_1}(x)-F_{t_2}(x)|+|F_{t_2}-A_{t_2}|&lt;\frac{\varepsilon}{3}+\frac{\varepsilon}{3}+\frac{\varepsilon}{3}=\varepsilon\)</span>\)</span>故可知关于 <span class="arithmatex">\(t\)</span> 的函数 <span class="arithmatex">\(A_t\)</span> 在 <span class="arithmatex">\(\mathfrak B_T\)</span> 上收敛, 不妨设收敛于 <span class="arithmatex">\(A\)</span>
+    下证 <span class="arithmatex">\(F(x)\underset{\mathfrak B_X}{\to}A\)</span> , 
+    取定 <span class="arithmatex">\(t_2\)</span> 不变, 则 <span class="arithmatex">\(\exists B_X\in \mathfrak B_X\)</span> , <span class="arithmatex">\(s.t.\)</span> <span class="arithmatex">\(\forall\,x\in B_X\)</span> , 有 <span class="arithmatex">\(|F_{t_2}(x)-A_{t_2}|&lt;\frac{\varepsilon}{3}\)</span> 成立, 
+    另一方面, 在式 <span class="arithmatex">\(|F_{t_1}(x)-F_{t_2}(x)|&lt;\varepsilon\)</span> 及式 <span class="arithmatex">\(|A_{t_1}-A_{t_{2}}|\leq\varepsilon\)</span> 中, 令 <span class="arithmatex">\(t_1\)</span> 在 <span class="arithmatex">\(B_T\)</span> 上取极限, 则得到 <span class="arithmatex">\(|F(x)-F_{t_2}(x)|&lt;\frac{\varepsilon}{3}\)</span> , <span class="arithmatex">\(|A-A_{t_2}|\leq\varepsilon\)</span>
+    因此 <span class="arithmatex">\(<span class="arithmatex">\(|F(x)-A|\leq|F(x)-F_{t_2}(x)|+|F_{t_2}(x)-A_{t_2}|+|A_{t_2}-A|&lt;\frac{5\varepsilon}{3}\)</span>\)</span>由此可说明 <span class="arithmatex">\(\lim_\limits{\mathfrak B_X}F(x)=A\)</span></p>
+<p><strong>推论</strong>: 若 <span class="arithmatex">\(\{f_{t},t\in T\}\)</span> 为依赖于参数 <span class="arithmatex">\(t\)</span> 的函数 <span class="arithmatex">\(f_t:X\to\mathbb{C}\)</span> 构成的函数族, <span class="arithmatex">\(\mathfrak B\)</span> 为 <span class="arithmatex">\(T\)</span> 中的基, 如果在 <span class="arithmatex">\(X\)</span> 和基 <span class="arithmatex">\(\mathfrak B\)</span> 上有 <span class="arithmatex">\(f_t\rightrightarrows f\)</span> , 且 <span class="arithmatex">\(f_t\)</span> 在 <span class="arithmatex">\(x_0\)</span> 处连续, 则函数 <span class="arithmatex">\(f:X\to\mathbb{C}\)</span> 上连续也在该点连续
+<strong>[证明]</strong>:
+    证明就是上面定理的直接推论, 
+    <span class="arithmatex">\(f_t\)</span> 在 <span class="arithmatex">\(x_0\)</span> 处连续满足了向下的箭头, <span class="arithmatex">\(f_t\)</span> 在 <span class="arithmatex">\(\mathfrak B\)</span> 上 <span class="arithmatex">\(f_t\rightrightarrows f\)</span> 满足了向右的箭头, 故有 <span class="arithmatex">\(<span class="arithmatex">\(\lim_\limits{x\to x_0}\lim_\limits{\mathfrak B}f_t(x)=\lim_\limits{\mathfrak B}\lim_\limits{x\to x_0}f_t(x)\)</span>\)</span>这就证明极限函数在 <span class="arithmatex">\(x_0\)</span> 处连续, 且值就是交换极限的结果</p>
+<p><strong>推论</strong>: 如果一个集合上的连续函数序列在该集合上一致收敛, 则极限函数也在该集合上连续</p>
+<p><strong>推论</strong>: 如果一个集合上由连续函数组成的级数在该集合上一致收敛, 则和函数也在该集合上连续</p>
+<p>之前我们证明过一个有关幂级数的结论，Abel第二定理
+现在可以知道 <span class="arithmatex">\(\sum\limits_{n=0}^{\infty}c_n(z-z_0)^n\)</span> 在 <span class="arithmatex">\(\zeta\)</span> 处收敛，则在 <span class="arithmatex">\([z_0,\zeta]\)</span> 上和函数存在且连续
+特别地，取 <span class="arithmatex">\(z_0=0\)</span> ，<span class="arithmatex">\(\zeta=1\)</span> ，由此可以得到如果 <span class="arithmatex">\(\sum\limits_{n=0}^{\infty}c_n\)</span> 收敛，则 <span class="arithmatex">\(\sum\limits_{n=0}^{\infty}c_nz^n\)</span> 在 <span class="arithmatex">\(1\)</span> 处右连续</p>
+<p>总之上面我们看到了，一致极限运算可以充分保持收敛函数列的连续性，但是否也是必要的呢？
+某些情形下，如果连续函数列收敛到连续函数，反过来也可以推出该收敛过程为一致收敛</p>
+<p><strong>Dini定理</strong>: 如果紧集上的连续函数序列在该紧集上单调收敛于连续函数, 则该序列一致收敛
+<strong>[证明]</strong>:
+    设紧集 <span class="arithmatex">\(E\)</span> 上的连续函数列 <span class="arithmatex">\(\{f_n:n\in\mathbb{N}\}\)</span> 收敛于 <span class="arithmatex">\(E\)</span> 上的连续函数 <span class="arithmatex">\(f\)</span>
+    且对于 <span class="arithmatex">\(\forall\,x\in E\)</span> , 数列 <span class="arithmatex">\(\{f_n(x)\}\)</span> 单调, 不妨设为单调递减
+    由于 <span class="arithmatex">\(f_n-f\)</span> <strong>递减收敛于 <span class="arithmatex">\(0\)</span></strong>  , 故 <span class="arithmatex">\(\forall\,y\in E\)</span> , <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,N(y,\varepsilon)\in\mathbb{N}\)</span> , 使得 <span class="arithmatex">\(n&gt;N(\varepsilon,y)\)</span> 时, 有 <span class="arithmatex">\(0&lt;f_n(y)-f(y)&lt;f_{N(y,\varepsilon)}(y)-f(y)&lt;\frac{\varepsilon}{3}\)</span>
+    另一方面, 由于<span class="arithmatex">\(f\)</span> <strong>连续</strong>, 故 <span class="arithmatex">\(\exists\,\delta(\varepsilon)&gt;0\)</span> , <span class="arithmatex">\(s.t.\)</span> <span class="arithmatex">\(|x-y|&lt;\delta(\varepsilon)\)</span> , 就有 <span class="arithmatex">\(|f(x)-f(y)|&lt;\frac{\varepsilon}{3}\)</span> , 
+    然后, 由于 <span class="arithmatex">\(f_n\)</span> <strong>连续</strong>, 故 <span class="arithmatex">\(\exists\,\delta(\varepsilon,n)&gt;0\)</span> , <span class="arithmatex">\(s.t.\)</span> <span class="arithmatex">\(|x-y|&lt;\delta(\varepsilon,n)\)</span> , 就有 <span class="arithmatex">\(|f_n(x)-f_n(y)|&lt;\frac{\varepsilon}{3}\)</span> ,
+    于是, 只要 <span class="arithmatex">\(n&gt;N(y,\varepsilon)\)</span> , <span class="arithmatex">\(\forall\,x\)</span> , 只要满足 <span class="arithmatex">\(|x-y|&lt;\min\{\delta(\varepsilon),\delta(\varepsilon,n)\}\)</span> , 即 <span class="arithmatex">\(x\in B(y,\delta(y)):=B(y,\min\{\delta(\varepsilon),\delta(\varepsilon,n)\})\)</span> 时, 就有 <span class="arithmatex">\(<span class="arithmatex">\(|f_n(x)-f(x)|\leq|f_n(x)-f_n(y)|+|f_n(y)-f(y)|+|f(y)-f(x)|&lt;\varepsilon\)</span>\)</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../../..", "features": [], "search": "../../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../../../../../javascript/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
