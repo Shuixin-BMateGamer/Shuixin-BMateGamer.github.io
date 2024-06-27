@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../Fourier_series%28H%29/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../../../../2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Jordan_form/">
+        <link rel="next" href="../nav_math/">
       
       
-      <link rel="icon" href="../../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
-        <title>级数逼近 - 水芯笔的笔筒~</title>
+        <title>日常 - 水芯笔的笔筒~</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -43,19 +43,19 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../../../../../../stylesheets/link.css">
+      <link rel="stylesheet" href="../../stylesheets/link.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css">
     
-      <link rel="stylesheet" href="../../../../../../ckplayer/css/ckplayer.css">
+      <link rel="stylesheet" href="../../ckplayer/css/ckplayer.css">
     
       <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
     
-    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bernstein多项式" class="md-skip">
+        <a href="#日常" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../../.." title="水芯笔的笔筒~" class="md-header__button md-logo" aria-label="水芯笔的笔筒~" data-md-component="logo">
+    <a href="../.." title="水芯笔的笔筒~" class="md-header__button md-logo" aria-label="水芯笔的笔筒~" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              级数逼近
+              日常
             
           </span>
         </div>
@@ -185,7 +185,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../../.." title="水芯笔的笔筒~" class="md-nav__button md-logo" aria-label="水芯笔的笔筒~" data-md-component="logo">
+    <a href="../.." title="水芯笔的笔筒~" class="md-nav__button md-logo" aria-label="水芯笔的笔筒~" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -203,7 +203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -220,17 +220,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -244,7 +246,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             网站导航
@@ -255,10 +257,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../../Webnav/nav_daily/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -267,6 +278,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -279,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Webnav/nav_math/" class="md-nav__link">
+      <a href="../nav_math/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -300,7 +312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Webnav/nav_school/" class="md-nav__link">
+      <a href="../nav_school/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -321,7 +333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Webnav/nav_english/" class="md-nav__link">
+      <a href="../nav_english/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -346,19 +358,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -372,7 +382,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             数学笔记
@@ -383,19 +393,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
@@ -409,7 +417,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             分析
@@ -420,19 +428,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
         
           
           <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
@@ -446,7 +452,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1_1">
             <span class="md-nav__icon md-icon"></span>
             微积分
@@ -495,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.Real_number/1.The_RealNumber_Axiom_system/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/1.The_RealNumber_Axiom_system/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.Real_number/2.Completeness_Closed_nested_interval/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/2.Completeness_Closed_nested_interval/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -537,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.Real_number/3.Completeness_Finite_covering/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/3.Completeness_Finite_covering/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -558,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.Real_number/4.Completeness_Accumulative_point_Principle/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/4.Completeness_Accumulative_point_Principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -579,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.Real_number/5.Completeness_Cauchy_Principle/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/5.Completeness_Cauchy_Principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.Real_number/6.Completeness_Dedekind_Principle/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/6.Completeness_Dedekind_Principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.Real_number/7.Completeness_Supremum_Principle/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/7.Completeness_Supremum_Principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -642,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.Real_number/8.Completeness_Monotonically_bounded_Principle/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/8.Completeness_Monotonically_bounded_Principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -663,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.Real_number/9.Compactness_Principle/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/0.Real_number/9.Compactness_Principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -727,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.Limitation/Function_limitation/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/1.Limitation/Function_limitation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -748,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.Limitation/Sequence_limitation/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/1.Limitation/Sequence_limitation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../2.Differential/Legendre_polynomial/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/2.Differential/Legendre_polynomial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -876,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3.Integral/Riemann_integral/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/3.Integral/Riemann_integral/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -902,19 +908,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1_5" >
         
           
           <label class="md-nav__link" for="__nav_3_1_1_5" id="__nav_3_1_1_5_label" tabindex="0">
@@ -928,7 +932,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_1_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_1_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1_1_5">
             <span class="md-nav__icon md-icon"></span>
             级数理论
@@ -942,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Series/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/4.Series/Series/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -963,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Power_series/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/4.Series/Power_series/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -984,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Fourier_series/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/4.Series/Fourier_series/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1005,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Fourier_series%28H%29/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/4.Series/Fourier_series%28H%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1023,30 +1027,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    级数逼近
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Shuixin%27s_Notes/Mathematics/1.Analysis/Calculus/4.Series/Approximation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1055,35 +1039,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#即证" class="md-nav__link">
-    <span class="md-ellipsis">
-      即证
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1225,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Jordan_form/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Jordan_form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1246,7 +1201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Linear_function/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Linear_function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1267,7 +1222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Linear_space_with_Measurement/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Linear_space_with_Measurement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1331,7 +1286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/1.Linear_Algebra/2.Matrix/Quadratic_form_and_Real_symmetric_matrix/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/1.Linear_Algebra/2.Matrix/Quadratic_form_and_Real_symmetric_matrix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1352,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/1.Linear_Algebra/2.Matrix/Unitary_similarity_and_Unitary_equivalence/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/1.Linear_Algebra/2.Matrix/Unitary_similarity_and_Unitary_equivalence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1373,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/1.Linear_Algebra/2.Matrix/Matrix_factorization/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/1.Linear_Algebra/2.Matrix/Matrix_factorization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1437,7 +1392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/1.Linear_Algebra/3.Polynomial/Single_variable_Polynomial/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/1.Linear_Algebra/3.Polynomial/Single_variable_Polynomial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1544,7 +1499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/2.Abstract_Algebra/1.Group/Group/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/2.Abstract_Algebra/1.Group/Group/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1608,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/2.Abstract_Algebra/2.Ring/Ring/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/2.Abstract_Algebra/2.Ring/Ring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1672,7 +1627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../2.Algebra/2.Abstract_Algebra/3.Field/Field/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/2.Algebra/2.Abstract_Algebra/3.Field/Field/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1787,7 +1742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3.Topology/Point_set_Topology/Continuous_mapping/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/3.Topology/Point_set_Topology/Continuous_mapping/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1894,7 +1849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Inequality/Abel_inequality/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Inequality/Abel_inequality/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1958,7 +1913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Algebra_related/Application_of_Determinant/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Algebra_related/Application_of_Determinant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1979,7 +1934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Algebra_related/Incidence_matrix/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Algebra_related/Incidence_matrix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2000,7 +1955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Algebra_related/Commutative_matrix/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Algebra_related/Commutative_matrix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2021,7 +1976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Algebra_related/Cryptography_M-sequence/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Algebra_related/Cryptography_M-sequence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2042,7 +1997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Algebra_related/Cryptography_LinearCode/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Algebra_related/Cryptography_LinearCode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2106,7 +2061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Identical_equation/Abel_identity/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Identical_equation/Abel_identity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2127,7 +2082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Identical_equation/Trigonometric_identity/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Identical_equation/Trigonometric_identity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2148,7 +2103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Identical_equation/Integral_identity/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Identical_equation/Integral_identity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2212,7 +2167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Combinatorics_related/Drawer_Principle/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Combinatorics_related/Drawer_Principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2233,7 +2188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools/Combinatorics_related/PageRank/" class="md-nav__link">
+      <a href="../../Shuixin%27s_Notes/Mathematics/Tools/Combinatorics_related/PageRank/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2290,23 +2245,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#即证" class="md-nav__link">
-    <span class="md-ellipsis">
-      即证
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2320,300 +2258,14 @@
                   
 
 
-<h1 id="bernstein多项式"><strong>Bernstein多项式</strong><a class="headerlink" href="#bernstein多项式" title="Permanent link"></a></h1>
-<p><strong>定义</strong>: 如果定义在有限闭区间 <span class="arithmatex">\([a,b]\)</span> 上的函数, 对 <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , 存在多项式 <span class="arithmatex">\(P\)</span> , 使得 <span class="arithmatex">\(\forall\,x\in[a,b]\)</span> , 有 
-$$
-|f(x)-P(x)|&lt;\varepsilon
-$$
-则称 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上能用多项式<strong>一致逼近</strong></p>
-<p>显然如果 <span class="arithmatex">\(f\)</span> 能够幂级数展开，则可以用多项式一致逼近，但幂级数展开要求 <span class="arithmatex">\(f\)</span> 有任意阶导数，这个条件十分的强，因此希望能寻找更加弱的条件能够保证 <span class="arithmatex">\(f\)</span> 可以用多项式一致逼近，并最好找到构造这个多项式的方法，前人已经找到了该充要条件：</p>
-<p><strong>Weierstrass逼近定理</strong>: 闭区间 <span class="arithmatex">\([a,b]\)</span> 上的函数 <span class="arithmatex">\(f\)</span> 能够用多项式一致逼近当且仅当 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上连续<br><strong>[定义/证明]</strong>:<br><strong>(必要性)</strong> 如果已知 <span class="arithmatex">\(f\)</span> 可以由多项式一致逼近, 那么 <span class="arithmatex">\(\forall\,n\in\mathbb{N^{*}}\)</span> , <span class="arithmatex">\(\exists\,P_{n}(x)\in\mathbb{R}[x]\)</span> , 使得 
-$$
-|f(x)-P_{n}(x)|&lt;\frac{1}{n}
-$$
-因此连续函数列 <span class="arithmatex">\(\{P_{n}(x)\}\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上一致收敛于 <span class="arithmatex">\(f\)</span> , 故 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上连续<br><strong>(充分性)</strong> 为了证明, 构造Bernstein多项式, 先记 </p>
-<div class="arithmatex">\[
-B_{i}^{n}(x)=C_{n}^{i}x^{i}(1-x)^{n-i}\qquad(i=0,1,\cdots,n)
-\]</div>
-<p>该多项式有如下性质: <br><span class="arithmatex">\((i)\)</span> <span class="arithmatex">\(\forall\,x\in[a,b]\)</span> , 
-$$
-B_{i}^{n}(x)\geq0
-$$
-<span class="arithmatex">\((ii)\)</span> <span class="arithmatex">\(\forall\,x\in[a,b]\)</span> , </p>
-<div class="arithmatex">\[
-\sum\limits_{i=0}^{n}B_{i}^{n}(x)=1
-\]</div>
-<p><span class="arithmatex">\((iii)\)</span> 记 </p>
-<div class="arithmatex">\[
-P(x)=\sum\limits_{i=0}^{n}a_{i}B_{i}^{n}(x)
-\]</div>
-<p>有 </p>
-<div class="arithmatex">\[
-P^{'}(x)=n\sum\limits_{i=0}^{n-1}(a_{i+1}-a_{i})B_{i}^{n-1}(x)
-\]</div>
-<p>性质 <span class="arithmatex">\((i)\)</span> 和 <span class="arithmatex">\((ii)\)</span> 都十分显然, 下面证明 <span class="arithmatex">\((iii)\)</span> , </p>
-<div class="arithmatex">\[
-\begin{align}P^{'}(x)&amp;=\big(\sum\limits_{i=0}^{n}a_{i}C_{n}^{i}x^{i}(1-x)^{n-i}\big)^{'}\\&amp;=\sum\limits_{i=1}^{n}a_{i}\frac{n!}{(n-i)!i!}ix^{i-1}(1-x)^{n-i}-\sum\limits_{i=0}^{n-1}a_{i}\frac{n!}{(n-i)!i!}(n-i)x^{i}(1-x)^{n-i-1}\\&amp;=\sum\limits_{i=1}^{n}a_{i}\frac{n!}{(n-i)!(i-1)!}x^{i-1}(1-x)^{n-i}-\sum\limits_{i=0}^{n-1}a_{i}\frac{n!}{(n-i-1)!i!}x^{i}(1-x)^{n-i-1}\\&amp;=\sum\limits_{i=0}^{n-1}a_{i+1}\frac{n!}{(n-i-1)!i!}x^{i}(1-x)^{n-i-1}-\sum\limits_{i=0}^{n-1}a_{i}\frac{n!}{(n-i-1)!i!}x^{i}(1-x)^{n-i-1}\\&amp;=n\sum\limits_{i=0}^{n-1}(a_{i+1}-a_{i})\frac{(n-1)!}{(n-i-1)!i!}x^{i}(1-x)^{n-i-1}\\&amp;=n\sum\limits_{i=0}^{n-1}(a_{i+1}-a_{i})B_{i}^{n-1}(x)\end{align}
-\]</div>
-<p>即证
-现在定义<strong>Bernstein多项式</strong>: 
-设 <span class="arithmatex">\(f:[0,1]\to\mathbb{R}\)</span> 称 </p>
-<div class="arithmatex">\[
-B_n(f;x)=\sum\limits_{i=0}^{n}f(\frac{i}{n})C_{n}^{i}x^{i}(1-x)^{n-i}=\sum\limits_{i=0}^{n}f(\frac{i}{n})B_{i}^{n}(x)
-\]</div>
-<p>为 <span class="arithmatex">\(f\)</span> 的 <strong><span class="arithmatex">\(n\)</span> 次Bernstein多项式</strong></p>
-<p>先证一个关于Bernstein多项式的性质<br><strong>引理</strong>: 对于 <span class="arithmatex">\(\forall\,x\in[0,1]\)</span> , 有 </p>
-<div class="arithmatex">\[
-\sum\limits_{i=0}^{n}(k-nx)^{2}B_{k}^{n}(x)\leq\frac{n}{4}
-\]</div>
-<p><strong>证明</strong>: <br>先计算 <span class="arithmatex">\(B_{n}(x;x)\)</span> 和 <span class="arithmatex">\(B_{n}(x^{2},x)\)</span>
-<span class="arithmatex">\((\mathrm{I})\)</span> </p>
-<div class="arithmatex">\[
-B_{n}(x;x)=\sum\limits_{i=0}^{n}\frac{i}{n}B_{i}^{n}(x)
-\]</div>
-<p>由性质 <span class="arithmatex">\((iii)\)</span> 应有 </p>
-<div class="arithmatex">\[
-B_{n}^{'}(x;x)=n\sum\limits_{i=0}^{n-1}\frac{i-(i-1)}{n}B_{i}^{n-1}(x)=\sum\limits_{i=0}^{n-1}B_{i}^{n-1}(x)=1
-\]</div>
-<p>故有 
-$$
-B_{n}(x;x)=x+c_{1}
-$$
-再代入 <span class="arithmatex">\(x=0\)</span> , 得到 </p>
-<div class="arithmatex">\[
-c_{1}=B_{n}(x;0)=\sum\limits_{i=0}^{n}\frac{i}{n}B_{i}^{n}(0)=\sum\limits_{i=0}^{n}\frac{i}{n}C_{n}^{i}x^{i}(1-x)^{n-i}\bigg|_{x=0}=\frac{0}{n}C_{n}^{0}\cdot1\cdot1^{n}=0
-\]</div>
-<p>因此 <span class="arithmatex">\(B_{n}(x;x)=x\)</span>
-<span class="arithmatex">\((\mathrm{II})\)</span> </p>
-<div class="arithmatex">\[
-B_{n}(x^2;x)=\sum\limits_{i=0}^{n}\frac{i^2}{n^2}B_{i}^{n}(x)
-\]</div>
-<p>由性质 <span class="arithmatex">\((iii)\)</span> 得 </p>
-<div class="arithmatex">\[
-\begin{align}B_{n}^{'}(x^2;x)&amp;=n\sum\limits_{i=0}^{n-1}\frac{2i+1}{n^2}B_{i}^{n-1}(x)\\&amp;=\frac{2n-2}{n}\sum\limits_{i=0}^{n-1}\frac{i}{n-1}B_{i}^{n-1}(x)+\frac{1}{n}\\&amp;=\frac{2n-2}{n}B_{n-1}(x;x)+\frac{1}{n}\\&amp;=2(1-\frac{1}{n})x+\frac{1}{n}\end{align}
-\]</div>
-<p>故有 </p>
-<div class="arithmatex">\[
-B_{n}(x^{2};x)=(1-\frac{1}{n})x^2+\frac{x}{n}+c_2
-\]</div>
-<p>再代入 <span class="arithmatex">\(x=0\)</span> , 得到 
-$$
-c_2=B_{n}(x^{2};0)=0
-$$
-因此 <span class="arithmatex">\(B_{n}(x^{2};x)=(1-\frac{1}{n})x^{2}+\frac{x}{n}\)</span>
-接下来可以证明不等式了, 直接计算
-<span class="arithmatex">\((\mathrm{III})\)</span> </p>
-<div class="arithmatex">\[
-\begin{align}\sum\limits_{k=0}^{n}(k-nx)^{2}B_{k}^{n}(x)&amp;=\sum\limits_{k=0}^{n}k^{2}B_{k}^{n}(x)-2nx\sum\limits_{k=0}^{n}kB_{k}^{n}(x)+n^{2}x^{2}\sum\limits_{k=0}^{n}B_{k}^{n}(x)\\&amp;=n^{2}B_{n}(x^{2};x)-2n^{2}xB_{n}(x;x)+n^{2}x^{2}B_{n}(1;x)\\&amp;=n^2\big((1-\frac{1}{n})x^{2}+\frac{x}{n}\big)-2n^{2}x^{2}+n^{2}x^{2}\\&amp;=nx-nx^2=nx(1-x)\leq\frac{n}{4}\end{align}
-\]</div>
-<h2 id="即证">即证<a class="headerlink" href="#即证" title="Permanent link"></a></h2>
-<p><br>将接下来的证明分为两部分: 
-<span class="arithmatex">\((a)\)</span> 我们证明 <span class="arithmatex">\([0,1]\)</span> 上的连续函数 <span class="arithmatex">\(f\)</span> 的Bernstein多项式在 <span class="arithmatex">\([0,1]\)</span> 上一致收敛于 <span class="arithmatex">\(f\)</span>
-由于 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\([0,1]\)</span> 上连续, 故必然一致连续, 那么 <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,\delta&gt;0\)</span> , <span class="arithmatex">\(s.t.\)</span> <span class="arithmatex">\(\forall\,x_{1},x_{2}\in[0,1]\)</span> , 满足 <span class="arithmatex">\(|x_{1}-x_{2}|&lt;\delta\)</span> , 就有 <span class="arithmatex">\(|f(x_{1})-f(x_{2})|&lt;\frac{\varepsilon}{2}\)</span> 
-由性质 <span class="arithmatex">\((ii)\)</span> 可得到 </p>
-<div class="arithmatex">\[
-f(x)=\sum\limits_{i=0}^{n}f(x)B_{i}^{n}(x)
-\]</div>
-<p>将 <span class="arithmatex">\(i\)</span> 的取值集如此划分: </p>
-<div class="arithmatex">\[
-\{0,1,\cdots,n\}=\underbrace{\{i:|\frac{i}{n}-x|\geq\delta\}}_{E_1}\cup\underbrace{\{i:|\frac{i}{n}-x|&lt;\delta\}}_{E_2}
-\]</div>
-<p>则 </p>
-<div class="arithmatex">\[
-\begin{align}|B_{n}(f;x)-f(x)|&amp;\leq\sum\limits_{i=0}^{n}|f(\frac{i}{n})-f(x)|B_{i}^{n}(x)\\&amp;=\sum\limits_{i\in E_{1}}|f(\frac{i}{n})-f(x)|B_{i}^{n}(x)+\sum\limits_{i\in E_{2}}|f(\frac{i}{n})-f(x)|B_{i}^{n}(x)\\&amp;\triangleq S_{1}+S_{2}\end{align}
-\]</div>
-<p>对 <span class="arithmatex">\(S_{1}\)</span> , <span class="arithmatex">\(S_{2}\)</span> 分别估计, 
-对 <span class="arithmatex">\(S_{1}\)</span> 估计, 由于 <span class="arithmatex">\(f\)</span> 为 <span class="arithmatex">\([0,1]\)</span> 上的连续函数, 故其有界, 设 <span class="arithmatex">\(|f|\leq M\)</span> , 则</p>
-<div class="arithmatex">\[
-\begin{align}S_{1}&amp;\leq2M\sum\limits_{i\in E_{1}}B_{i}^{n}(x)\\&amp;\leq\frac{2M}{\delta^{2}}\sum\limits_{i\in E_{1}}\delta^{2}B_{i}^{n}(x)\\&amp;\leq\frac{2M}{\delta^{2}}\sum\limits_{i\in E_{1}}(\frac{i}{n}-x)^{2}B_{i}^{n}(x)\\&amp;\leq\frac{2M}{\delta^{2}n^{2}}{\color{blue}\sum\limits_{i=0}^{n}(i-nx)^{2}B_{i}^{n}(x)}\leq\frac{2M}{\delta^{2}n^{2}}\cdot{\color{blue}\frac{n}{4}}\qquad{\color{blue}(引理)}\\&amp;=\frac{M}{2\delta^{2}n}\end{align}
-\]</div>
-<p>再对 <span class="arithmatex">\(S_{2}\)</span> 估计, </p>
-<div class="arithmatex">\[
-S_{2}&lt;\sum\limits_{i\in E_{2}}\frac{\varepsilon}{2}B_{i}^{n}(x)\leq\frac{\varepsilon}{2}\sum\limits_{i=0}^{n}B_{i}^{n}(x)=\frac{\varepsilon}{2}
-\]</div>
-<p>那么当 <span class="arithmatex">\(n\)</span> 足够大, 确切来讲当 <span class="arithmatex">\(n&gt;\lceil\frac{M}{\varepsilon\delta^{2}}\rceil\)</span> 时, 就有 <span class="arithmatex">\(S_{1}&lt;\frac{\varepsilon}{2}\)</span>
-进而有 </p>
-<p>$$
-S=S_{1}+S_{2}&lt;\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon
-$$
-这就说明了 <span class="arithmatex">\(B_{n}(f;x)\)</span> 在 <span class="arithmatex">\([0,1]\)</span> 上一致收敛于 <span class="arithmatex">\(f(x)\)</span><br><span class="arithmatex">\((b)\)</span> 下面只需要将 <span class="arithmatex">\([0,1]\)</span> 拓展到任意有界闭区间 <span class="arithmatex">\([a,b]\)</span> , 设 <span class="arithmatex">\(f\)</span> 在区间 <span class="arithmatex">\([a,b]\)</span> 上连续, 作换元 
-$$
-x=a+t(b-a),\qquad t\in[0,1]
-$$
-记 <span class="arithmatex">\(f(x)=f(a+t(b-a))=g(t)\)</span> , 则 <span class="arithmatex">\(g(t)\)</span> 是 <span class="arithmatex">\([0,1]\)</span> 上的连续函数, 那么 <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , <span class="arithmatex">\(\exists\,P(t)\in\mathbb{R}[t]\)</span> , 使得 <span class="arithmatex">\(|g(t)-P(t)|&lt;\varepsilon\)</span> , 在换元式中反解出 <span class="arithmatex">\(t\)</span> 
-$$
-t=\frac{x-a}{b-a}
-$$
-再代入刚得到的式子 
-$$
-\bigg|f(x)-P(\frac{x-a}{b-a})\bigg|=|g(t)-P(t)|&lt;\varepsilon
-$$
-显然 <span class="arithmatex">\(P(\frac{x-a}{b-a})\)</span> 是关于 <span class="arithmatex">\(x\)</span> 的多项式, 故即证</p>
-<h1 id="三角多项式"><strong>三角多项式</strong><a class="headerlink" href="#三角多项式" title="Permanent link"></a></h1>
-<p><strong>定义</strong>: 称 
-$$
-T_{n}(x)=\frac{a_{0}}{2}+\sum\limits_{k=1}^{n}(\alpha_{k}\cos kx+\beta_{k}\sin kx)
-$$
-为 <strong><span class="arithmatex">\(n\)</span> 次三角多项式</strong>, </p>
-<p><strong>定义</strong>: 如果定义在有限闭区间 <span class="arithmatex">\([a,b]\)</span> 上的函数, 对 <span class="arithmatex">\(\forall\,\varepsilon&gt;0\)</span> , 存在三角多项式 <span class="arithmatex">\(T\)</span> , 使得 <span class="arithmatex">\(\forall\,x\in[a,b]\)</span> , 有 
-$$
-|f(x)-T(x)|&lt;\varepsilon
-$$
-则称 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上能用三角多项式<strong>一致逼近</strong></p>
-<p><strong>Weierstrass逼近定理</strong>: 闭区间 <span class="arithmatex">\([-\pi,\pi]\)</span> 上的连续函数 <span class="arithmatex">\(f\)</span> , 如果满足 <span class="arithmatex">\(f(-\pi)=f(\pi)\)</span> , 则必然能用三角多项式一致逼近<br><strong>[证明]</strong>:
-由于 <span class="arithmatex">\(f(-\pi)=f(\pi)\)</span> , 故可以将 <span class="arithmatex">\(f\)</span> 延拓为 <span class="arithmatex">\(\mathbb{R}\)</span> 上以 <span class="arithmatex">\(2\pi\)</span> 为周期的连续函数 <span class="arithmatex">\(\tilde{f}\)</span> <br>根据<strong>Fejér定理</strong>可知, <span class="arithmatex">\(\tilde{f}\)</span> 必然可以在 <span class="arithmatex">\((-\infty,\infty)\)</span> 上用序列 <span class="arithmatex">\(\{\sigma_{n}(x)\}\)</span> 一致逼近<br>我们知道 <span class="arithmatex">\(f\)</span> 的Fourier级数的 <span class="arithmatex">\(k\)</span> 项部分和 <span class="arithmatex">\(S_{k}(x)\)</span> 为一个 <span class="arithmatex">\(k\)</span> 次的三角多项式<br>因此
-$$
-\sigma_{n}(x)=\frac{1}{n}(S_{0}(x)+S_{1}(x)+\cdots+S_{n-1}(x))
-$$
-为一个 <span class="arithmatex">\(n-1\)</span> 次的三角多项式, 这就找到了一个一致逼近 <span class="arithmatex">\(f\)</span> 的三角多项式序列</p>
-<h1 id="平方平均逼近"><strong>平方平均逼近</strong><a class="headerlink" href="#平方平均逼近" title="Permanent link"></a></h1>
-<p>上面讨论了对于周期为 <span class="arithmatex">\(2\pi\)</span> 的连续周期函数都可以用三角多项式一致逼近<br>现在将连续的条件进一步放弱，对于一般的可积函数，是否还可以做到都可以用序列一致逼近呢？<br>答案是否定的，一致逼近的实质便是下面这个式子 
-$$
-\sup_{-\pi\leq x\leq\pi}|f(x)-T_{n}(x)|\to0\quad(n\to\infty)
-$$
-它意味着 <span class="arithmatex">\(f\)</span> 和 <span class="arithmatex">\(T_{n}\)</span> 的差值在整个区间内都要<strong>均匀地</strong>趋近于 <span class="arithmatex">\(0\)</span> ，不允许有任何点是例外，连续函数点点之间邻近，相差很小，可以做到，但对于一般的可积函数而言，因为断点的存在，就不再一定能够做到了</p>
-<p>于是放弃了一致逼近，转而只要求三角多项式 <span class="arithmatex">\(T_{n}\)</span> 能够<strong>平均地</strong>逼近 <span class="arithmatex">\(f\)</span> 即可，即要求有 </p>
-<div class="arithmatex">\[
-\int_{-\pi}^{\pi}(f(x)-T_{n}(x))^{2}\,\mathrm{d}x\to0\quad(n\to\infty)
-\]</div>
-<p>下面是我们讨论的前提：<br>如果 <span class="arithmatex">\(f\)</span> 为 <span class="arithmatex">\([-\pi,\pi]\)</span> 上的有界函数，假定 <span class="arithmatex">\(f\)</span> Riemann可积，则必定有 <span class="arithmatex">\(f^{2}\)</span> Riemann可积<br>如果 <span class="arithmatex">\(f\)</span> 为 <span class="arithmatex">\([-\pi,\pi]\)</span> 上的无界函数，假定 <span class="arithmatex">\(f^{2}\)</span> 反常可积，则必有 <span class="arithmatex">\(|f|\)</span> 反常绝对可积<br>记这样的函数类为 <span class="arithmatex">\(\mathbf{R}^{2}[-\pi,\pi]\)</span></p>
-<p><strong>定义</strong>: 设 <span class="arithmatex">\(f\in\mathbf{R}^{2}[-\pi,\pi]\)</span> , 如果存在三角多项式序列 <span class="arithmatex">\(\{T_{n}\}\)</span> , 使得 </p>
-<div class="arithmatex">\[
-\lim_{n\to\infty}\int_{-\pi}^{\pi}(f(x)-T_{n}(x))^{2}\,\mathrm{d}x=0
-\]</div>
-<p>则称 <span class="arithmatex">\(\{T_{n}\}\)</span> <strong>平方平均收敛于 <span class="arithmatex">\(f\)</span></strong> , 或是称 <span class="arithmatex">\(f\)</span> 可用三角多项式<strong>平方平均逼近</strong></p>
-<p>该结论的证明关键也与 <span class="arithmatex">\(f\)</span> 的Fourier级数密切相关，事实上与Fourier级数的部分和相关的<strong>极值性质</strong>有关，为证明<strong>三角函数系</strong>下的Fourier级数相关结论，其实不妨考虑<strong>一般的正交函数系</strong>下的Fourier级数的结论<br><span class="arithmatex">\(\mathbf{R}^{2}[a,b]\)</span> 是 <span class="arithmatex">\([a,b]\)</span> 上可积且平方可积的函数集，可以证明其构成一个<strong>线性空间</strong>，引入<strong>内积</strong> </p>
-<div class="arithmatex">\[
-\langle f,g\rangle=\int_{a}^{b}f(x)g(x)\,\mathrm{d}x
-\]</div>
-<p>更是构成了<strong>内积空间</strong>，<br>内积空间有关定义这里不再陈述，见 [[Linear_space_with_Measurement]]:<strong><a href="http://Shuixin-BMateGamer.github.io/Shuixin%27s_Notes/Mathematics/2.Algebra/1.Linear_Algebra/1.Linear_Mapping/Linear_space_with_Measurement">有度量的线性空间</a></strong> <br>但是这个内积空间的基我们实则还并不清楚，看起来好像是其中的正交函数系：</p>
-<div class="arithmatex">\[
-\{\varphi_{0},\varphi_{1},\cdots,\varphi_{n},\cdots\}
-\]</div>
-<p>但其实并未知是否空间内的函数都可用它们线性表出，即不能确定这是一组基，恰好的，其实这正是我们本身要研究的问题，如果 <span class="arithmatex">\(\mathbf{R}^{2}[a,b]\)</span> 中的函数都可以用该函数系表出，就说明了可以用这样的正交函数系平方平均逼近</p>
-<p><strong>定义</strong>: 设 <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 为 <span class="arithmatex">\(\mathbf{R}^{2}[a,b]\)</span> 上的规范正交系, <span class="arithmatex">\(\forall\,f\in\mathbf{R}^{2}[a,b]\)</span> , 称 </p>
-<div class="arithmatex">\[
-c_{k}=\langle f,\varphi_k\rangle=\int_{a}^{b}f(x)\varphi_{k}(x)\,\mathrm{d}x\quad(k=0,1,\cdots)
-\]</div>
-<p>为 <span class="arithmatex">\(f\)</span> 关于正交系 <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 的<strong>Fourier系数</strong>, 将由此产生的级数 <span class="arithmatex">\(\sum\limits_{k=1}^{\infty}c_{k}\varphi_{k}(x)\)</span> 称为 <span class="arithmatex">\(f\)</span> 关于正交系 <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 的 <strong>Fourier级数</strong>, 记作 </p>
-<div class="arithmatex">\[
-f(x)\sim\sum\limits_{k=1}^{\infty}c_{k}\varphi_{k}(x)
-\]</div>
-<p><em># 之前讨论的三角函数系下的Fourier级数其实都是规范正交系</em></p>
-<div class="arithmatex">\[
-\{\frac{1}{\sqrt{2\pi}},\frac{\cos x}{\sqrt{\pi}},\frac{\sin x}{\sqrt{\pi}},\cdots,\frac{\cos nx}{\sqrt{\pi}},\frac{\sin nx}{\sqrt{\pi}},\cdots\}
-\]</div>
-<p><em>下的结果</em></p>
-<p>记部分和 </p>
-<div class="arithmatex">\[
-S_{n}(x)=\sum\limits_{k=0}^{n}c_{k}\varphi_{k}(x)
-\]</div>
-<p>称 </p>
-<div class="arithmatex">\[
-T_{n}(x)=\sum\limits_{k=0}^{n}\alpha_{k}\varphi_{k}(x)
-\]</div>
-<p>为 <span class="arithmatex">\(n\)</span> 次 <span class="arithmatex">\(\varphi\)</span> 多项式，<span class="arithmatex">\(\alpha_{k}\)</span> 为给定的实数</p>
-<p>现在需要探究的问题便成为：
-对于给定的空间内的函数 <span class="arithmatex">\(f\)</span> 和给定的正整数 <span class="arithmatex">\(n\)</span> ，如何找到一个 <span class="arithmatex">\(n\)</span> 次 <span class="arithmatex">\(\varphi\)</span> 多项式 <span class="arithmatex">\(T_{n}(x)\)</span> ，使得 </p>
-<div class="arithmatex">\[
-||f-T_{n}||=\bigg(\int_{a}^{b}(f(x)-T_{n}(x))^{2}\,\mathrm{d}x\bigg)^{\frac{1}{2}}
-\]</div>
-<p>尽可能的小</p>
-<p>可以通过规范正交系及Fourier系数相关性质直接计算：</p>
-<div class="arithmatex">\[
-\begin{align}||f-T_{n}||^{2}&amp;=\int_{a}^{b}(f(x)-T_{n}(x))^{2}\,\mathrm{d}x\\&amp;=\int_{a}^{b}f^{2}(x)\,\mathrm{d}x-2\int_{a}^{b}f(x)\sum\limits_{k=0}^{n}\alpha_{k}\varphi_{k}(x)\,\mathrm{d}x+\int_{a}^{b}\big(\sum\limits_{k=0}^{n}\alpha_{k}\varphi_{k}(x)\big)^{2}\,\mathrm{d}x\\&amp;=||f||^{2}-2\sum\limits_{k=0}^{n}\alpha_{k}\int_{a}^{b}f(x)\varphi_{k}(x)\,\mathrm{d}x+\sum\limits_{i=0}^{n}\sum\limits_{j=0}^{n}\alpha_{i}\alpha_{j}\int_{a}^{b}\varphi_{i}(x)\varphi_{j}(x)\,\mathrm{d}x\\&amp;=||f||^{2}-2\sum\limits_{k=0}^{n}\alpha_{k}c_{k}+\sum\limits_{i=0}^{n}\sum\limits_{j=0}^{n}\alpha_{i}\alpha_{j}\delta_{ij}\\&amp;=||f||^{2}-2\sum\limits_{k=0}^{n}\alpha_{k}c_{k}+\sum\limits_{k=0}^{n}\alpha_{k}^{2}\\&amp;=||f||^{2}+\sum\limits_{k=0}^{n}(\alpha_{k}-c_{k})^{2}-\sum\limits_{k=0}^{n}c_{k}^{2}\\&amp;\geq||f||^{2}-\sum\limits_{k=0}^{n}c_{k}^2\end{align}
-\]</div>
-<p>等号成立当且仅当 </p>
-<p>$$
-\alpha_{k}=c_{k}\qquad(k=0,1,\cdots,n)
-$$
-这时 <span class="arithmatex">\(||f-T_{n}||^{2}\)</span> 取到最小值<br>这就是<strong>Fourier级数部分和的极值性质</strong><br>由上面的推导过程可以直接得到 </p>
-<div class="arithmatex">\[
-\sum\limits_{k=0}^{n}c_{k}^{2}\leq||f||^{2}
-\]</div>
-<p>这就是<strong>Bessel不等式</strong><br>由于上式右边与 <span class="arithmatex">\(n\)</span> 无关，对 <span class="arithmatex">\(n\)</span> 取极限可得到 </p>
-<div class="arithmatex">\[
-\sum\limits_{k=0}^{\infty}c_{k}^{2}\leq||f||^{2}&lt;+\infty
-\]</div>
-<p>即级数 <span class="arithmatex">\(\sum\limits_{k=0}^{\infty}c_{k}^{2}\)</span> 收敛，可知 <span class="arithmatex">\(c_{k}\to0\:(k\to\infty)\)</span>
-上面的结论总结下来便是下面的定理</p>
-<p><strong>定理</strong>: 设 <span class="arithmatex">\(f\in\mathbf{R}^{2}[a,b]\)</span> , <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 为 <span class="arithmatex">\(\mathbf{R}^{2}[a,b]\)</span> 中的规范正交系, <span class="arithmatex">\(\{c_{k}\}\)</span> 为 <span class="arithmatex">\(f\)</span> 关于 <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 的Fourier系数, 则有: <br><span class="arithmatex">\((1)\)</span> 对任意的正整数 <span class="arithmatex">\(n\)</span> 和实数 <span class="arithmatex">\(\alpha_{0},\alpha_{1},\cdots,\alpha_{n}\)</span> , 有 </p>
-<div class="arithmatex">\[
-||f-\sum\limits_{k=0}^{n}\alpha_{k}\varphi_{k}(x)||\geq||f-\sum\limits_{k=0}^{n}c_{k}\varphi_{k}(x)||
-\]</div>
-<p><span class="arithmatex">\((2)\)</span> </p>
-<div class="arithmatex">\[
-||f-\sum\limits_{k=0}^{n}c_{k}\varphi_{k}(x)||=||f||^{2}-\sum\limits_{k=0}^{n}c_{k}^{2}
-\]</div>
-<p><span class="arithmatex">\((3)\)</span> </p>
-<div class="arithmatex">\[
-\sum\limits_{k=0}^{\infty}c_{k}^{2}\leq||f||^{2}
-\]</div>
-<p>注意上面提到的式子 </p>
-<div class="arithmatex">\[
-\sum\limits_{k=0}^{\infty}c_{k}^{2}\leq||f||^{2}
-\]</div>
-<p>如果等号成立，我们其实就找到了我们要的结果<br>将等式 </p>
-<div class="arithmatex">\[
-\sum\limits_{k=0}^{\infty}c_{k}^{2}=||f||^{2}
-\]</div>
-<p>称为<strong>Perseval等式</strong>或<strong>Perseval封闭性方程</strong><br>几何意义十分明显，如果规范正交函数系 <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 可以作为空间的基，若 <span class="arithmatex">\(f\)</span> 展开为Fourier级数 
-$$
-f(x)=c_{0}\varphi_{0}(x)+c_{1}\varphi_{1}(x)+\cdots+c_{n}\varphi_{n}(x)+\cdots
-$$
-则 <span class="arithmatex">\((c_{0},c_{1},\cdots,c_{n},\cdots)\)</span> 便为 <span class="arithmatex">\(f\)</span> 在该组基下的坐标，<strong>Perseval等式</strong>便意为无穷维空间中的勾股定理</p>
-<p><strong>定义</strong>: 设 <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 为 <span class="arithmatex">\(\mathbf{R}^{2}[a,b]\)</span> 中的一个规范正交系, 如果 <span class="arithmatex">\(\forall\,f\in\mathbf{R}^{2}[a,b]\)</span> , Perseval等式成立, 此时称该组规范正交系 <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 是<strong>完备</strong>的</p>
-<p><strong>推论</strong>: 规范正交系 <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 是完备的当且仅当对 <span class="arithmatex">\(\forall\,f\in\mathbf{R}^{2}[a,b]\)</span> , 有 </p>
-<div class="arithmatex">\[
-\lim_{n\to\infty}||f-\sum\limits_{k=0}^{n}c_{k}\varphi_{k}||^{2}=0
-\]</div>
-<p>即 <span class="arithmatex">\(f\)</span> 可用 <span class="arithmatex">\(\{\varphi_{k}\}\)</span> 的Fourier级数平方平均逼近</p>
-<p>现在来看 <span class="arithmatex">\(\mathbf{R}^{2}[-\pi,\pi]\)</span> 上三角规范正交系</p>
-<div class="arithmatex">\[
-\{\frac{1}{\sqrt{2\pi}},\frac{\cos x}{\sqrt{\pi}},\frac{\sin x}{\sqrt{\pi}},\cdots,\frac{\cos nx}{\sqrt{\pi}},\frac{\sin nx}{\sqrt{\pi}},\cdots\}
-\]</div>
-<p>的Bessel不等式和Perseval等式<br>记 </p>
-<div class="arithmatex">\[
-\varphi_{0}(x)=\frac{1}{\sqrt{2\pi}},\quad\varphi_{2k-1}(x)=\frac{\cos kx}{\sqrt{\pi}},\quad\varphi_{2k}(x)=\frac{\sin kx}{\sqrt{\pi}}
-\]</div>
-<p>设 <span class="arithmatex">\(f\in\mathbf{R}^{2}[-\pi,\pi]\)</span> ，有 </p>
-<div class="arithmatex">\[
-\begin{align}&amp;c_{0}=\int_{-\pi}^{\pi}f(x)\varphi_{0}(x)\,\mathrm{d}x=\frac{1}{\sqrt{2\pi}}\int_{-\pi}^{\pi}f(x)\,\mathrm{d}x=\sqrt{\frac{\pi}{2}}a_{0}\\&amp;c_{2k-1}=\int_{-\pi}^{\pi}f(x)\varphi_{2k-1}(x)\,\mathrm{d}x=\frac{1}{\sqrt{\pi}}\int_{-\pi}^{\pi}f(x)\cos kx\,\mathrm{d}x=\sqrt{\pi}a_{k}\\&amp;c_{2k}=\int_{-\pi}^{\pi}f(x)\varphi_{2k}(x)\,\mathrm{d}x=\frac{1}{\sqrt{\pi}}\int_{-\pi}^{\pi}f(x)\sin kx\,\mathrm{d}x=\sqrt{\pi}b_{k}\end{align}
-\]</div>
-<p>因此 </p>
-<div class="arithmatex">\[
-\sum\limits_{k=0}^{2n}c_{k}\varphi_{k}(x)=\frac{c_{0}}{2}+\sum\limits_{k=1}^{n}(a_{k}\cos kx+b_{k}\sin kx)
-\]</div>
-<p>这里 <span class="arithmatex">\(a_{k}\)</span> 和 <span class="arithmatex">\(b_{k}\)</span> 都是同[[Fourier级数]]中的定义的Fourier系数<br>如此 <span class="arithmatex">\(f\)</span> 的Bessel不等式写作 </p>
-<div class="arithmatex">\[
-\frac{a_{0}^2}{2}+\sum\limits_{k=1}^{n}(a_{k}^{2}+b_{k}^{2})\leq\frac{1}{\pi}\int_{-\pi}^{\pi}f^{2}(x)\,\mathrm{d}x\tag{B}
-\]</div>
-<p>对应 <span class="arithmatex">\(f\)</span> 的Perseval等式写作 </p>
-<div class="arithmatex">\[
-\frac{a_{0}^2}{2}+\sum\limits_{k=1}^{n}(a_{k}^{2}+b_{k}^{2})=\frac{1}{\pi}\int_{-\pi}^{\pi}f^{2}(x)\,\mathrm{d}x\tag{P}
-\]</div>
-<p><strong>定理</strong>: 设 <span class="arithmatex">\(f\in\mathbf{R}^{2}[-\pi,\pi]\)</span> , <span class="arithmatex">\(a_{n},b_{n}\)</span> 是 <span class="arithmatex">\(f\)</span> 关于三角函数系的Fourier系数, 那么 <span class="arithmatex">\(f\)</span> 可用它的Fourier级数的部分和平方平均逼近, 即Perseval等式 <span class="arithmatex">\((\mathrm{P})\)</span> 成立<br><strong>[证明]</strong>:<br>(待)</p>
-<p><strong>推论</strong>: 如果 <span class="arithmatex">\([-\pi,\pi]\)</span> 上的连续函数 <span class="arithmatex">\(f\)</span> 和三角函数系 </p>
-<div class="arithmatex">\[
-\{1,\cos x,\sin x,\cdots,\cos nx,\sin nx,\cdots\}
-\]</div>
-<p>中的每个函数都正交, 则必然有<span class="arithmatex">\(f=0\)</span><br><strong>[证明]</strong>:<br>(待)</p>
-<p><strong>推论</strong>: 如果两个连续函数有相同的Fourier级数, 则这两个连续函数必然恒等<br><strong>[证明]</strong>:<br>(待)</p>
-<p><strong>定理</strong>: 设 <span class="arithmatex">\(f,g\in\mathbf{R}^{2}[-\pi,\pi]\)</span> , <span class="arithmatex">\(a_{n}\)</span> , <span class="arithmatex">\(b_{n}\)</span> , 和 <span class="arithmatex">\(\alpha_{n}\)</span> , <span class="arithmatex">\(\beta_{n}\)</span> 分别是 <span class="arithmatex">\(f\)</span> 和 <span class="arithmatex">\(g\)</span> 的Fourier系数, 那么 </p>
-<div class="arithmatex">\[
-\frac{1}{\pi}\int_{-\pi}^{\pi}f(x)g(x)\,\mathrm{d}x=\frac{a_{0}\alpha_{0}}{2}+\sum\limits_{n=1}^{\infty}(a_{n}\alpha_{n}+b_{n}\beta_{n})
-\]</div>
-<p><strong>[证明]</strong>:<br>(待)</p>
-<p><strong>定理</strong>: 设 <span class="arithmatex">\(f\in\mathbf{R}^{2}[-\pi,\pi]\)</span> , 其Fourier级数为 </p>
-<p>$$
-f(x)\sim\frac{a_{0}}{2}+\sum\limits_{n=1}^{\infty}(a_{n}\cos nx+b_{n}\sin nx)
-$$
-那么对包含 <span class="arithmatex">\([-\pi,\pi]\)</span> 的任意区间 <span class="arithmatex">\([a,b]\)</span> , 有 </p>
-<div class="arithmatex">\[
-\int_{a}^{b}f(x)\,\mathrm{d}x=\int_{a}^{b}\frac{a_{0}}{2}\,\mathrm{d}x+\sum\limits_{n=1}^{\infty}\int_{a}^{b}(a_{n}\cos nx+b_{n}\sin nx)\,\mathrm{d}x
-\]</div>
-<p><strong>[证明]</strong>:<br>(待)</p>
-<p>该定理说明了<strong>无论Fourier级数收敛与否，一定可以逐项积分</strong></p>
+<h1 id="日常"><strong>日常</strong><a class="headerlink" href="#日常" title="Permanent link"></a></h1>
+<p><strong>一些日用网站</strong></p>
+<p><a href="https://www.bilibili.com/"target="blank">BiliBili</a></p>
+<p><a href="https://www.zhihu.com/"target="blank">知乎</a></p>
+<p><a href="https://www.poe.com/"target="blank">Poe (Chat-GPT)</a></p>
+<p><a href="https://www.youtube.com/"target="blank">Youtube</a></p>
+<p><a href="https://mail.qq.com/"target="blank">QQ邮箱</a></p>
+<p><a href="https://mail.yeah.net/"target="blank">Yeah邮箱</a></p>
 
 
 
@@ -2705,12 +2357,12 @@ $$
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../../../..", "features": [], "search": "../../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
-        <script src="../../../../../../javascripts/extra.js"></script>
+        <script src="../../javascripts/extra.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
@@ -2718,7 +2370,7 @@ $$
       
         <script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
       
-        <script src="../../../../../../ckplayer/js/ckplayer.js"></script>
+        <script src="../../ckplayer/js/ckplayer.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js"></script>
       
