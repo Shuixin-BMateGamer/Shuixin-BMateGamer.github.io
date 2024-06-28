@@ -1,7 +1,0 @@
-@font-face {
-    font-family: "sans";
-    src: "...";
-  }
-  :root {
-    --md-text-font: "sans"; 
-  }

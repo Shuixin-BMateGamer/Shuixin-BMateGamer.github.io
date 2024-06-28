@@ -5,7 +5,6 @@ document$.subscribe(({ body }) => {
         { left: "$",   right: "$",   display: false },
         { left: "\\(", right: "\\)", display: false },
         { left: "\\[", right: "\\]", display: true },
-        { left: "\\left\\{", right: "\\right\\}", display: false }
       ],
     })
   })
